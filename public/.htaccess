@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteBase /
+
+# www to non-www
+RewriteCond %{HTTP_HOST} ^www.ayberk-akici.rhcloud.com/$
+RewriteRule (.*) http://ayberk-akici.rhcloud.com:80/$1 [R=301,L] 
