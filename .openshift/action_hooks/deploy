@@ -36,3 +36,9 @@ pushd ${OPENSHIFT_REPO_DIR} > /dev/null
 echo "bundle exec rake db:migrate RAILS_ENV=${RAILS_ENV:-production}"
 ruby_with_nodejs_context "bundle exec rake db:migrate RAILS_ENV=${RAILS_ENV:-production}"
 popd > /dev/null
+
+# Move .htaccess from root folder to public folder on every deploy
+mv $HOME/app-root/repo/.htaccess $HOME/app-root/repo/public/.htaccess
+
+# Paranoidly ensuring sane permissions (in case we check in dodgy perms)
+chmod 644 $HOME/app-root/repo/public/.htaccess

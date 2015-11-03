@@ -1,5 +1,6 @@
+<IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /
+</IfModule>
 
 # www to non-www
 RewriteCond %{HTTP_HOST} ^www.ayberk-akici.rhcloud.com/$
