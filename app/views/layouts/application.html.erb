@@ -39,23 +39,27 @@
   </head>
   <body>
 
-    <!-- <div class="navbar navbar-default navbar-static-top">
+    <header class="site-nav" id="header" role="banner">
       <div class="container">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Ayberk</a>
-        <div class="navbar-collapse collapse navbar-responsive-collapse">
-          <ul class="nav navbar-nav">
-            <li><%= link_to "Link1", "/path1"  %></li>
-            <li><%= link_to "Link2", "/path2"  %></li>
-            <li><%= link_to "Link3", "/path3"  %></li>
+        <h1 class="site-logo">
+          <a class="logo" href="/">
+            <img src="<%= image_path 'ayberk-akici-logo.svg' %>" alt="Ayberk Akıcı" title="Ayberk Akıcı, Front-End Web Developer" />
+            <span>FRONT-END WEB DEVELOPER</span>
+          </a>
+        </h1>
+        <nav aria-labelledby="main-navigation" class="pull-left" role="navigation">
+         <!-- <h2 class="for-screenreader" id="main-navigation">Main menu</h2>-->
+          <ul class="primary-menu">
+            <li class="primary-menu-link"><a href="/about">About</a></li>
+            <li class="primary-menu-link"><a href="/work">Work</a></li>
+            <li class="primary-menu-link"><a href="/reading-list">Reading List</a></li>
+            <li class="primary-menu-link"><a href="/Contact">Contact</a></li>
           </ul>
-        </div>
+        </nav>
       </div>
-    </div> -->
+    </header>
+
+
     <%= yield %>
 
    
