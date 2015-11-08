@@ -12,3 +12,24 @@
 //
 //= require jquery
 //= require bootstrap-sprockets
+
+$(function() {
+	function checkPosition() {
+            if ($(this).scrollTop() > 200) {
+                $('#goTop').fadeIn(500);
+            } else {
+                $('#goTop').fadeOut(300);
+            }
+        }
+        // Show or hide the sticky footer button
+        $(window).scroll(checkPosition);
+
+        // Animate the scroll to top
+        $('.goTopAnchor').click(function(event) {
+            event.preventDefault();
+
+            $('html, body').animate({scrollTop: 0}, 600);
+        })
+
+        checkPosition();
+});
