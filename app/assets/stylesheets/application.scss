@@ -14,15 +14,15 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 /* cyrillic-ext */
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400);
 
 /*Colors*/
 $white: #ffffff;
-$darkGrey: #2f2f2f;
+$darkGrey: #232527;
 $beige: #fbf7e0;
-$turquoise: #00b2af;
+$turquoise: #15b4c9;
 $lightGrey: #7c7a79; /*-> h2, p(tarih)*/
-$darkGreyText: #363634; /*-> h3, p*/
+$darkGreyText: #666e74; /*-> h3, p*/
 
 
 body {
@@ -31,6 +31,12 @@ body {
 	margin: 0;
 	padding: 0;
 	color: $darkGreyText;
+  overflow-y: auto;
+  padding-bottom: 30px;
+}
+
+html, body {
+  height: 100%;
 }
 
 /* ~~ this fixed width container surrounds all other elements ~~ */
@@ -42,9 +48,10 @@ body {
 
 /*Header*/
 header {
-  border-bottom: 2px solid $turquoise;
+  border-bottom: 3px solid $turquoise;
   background: $darkGrey;
   width: 100%;
+  display: table;
   overflow: hidden;
 }
 
@@ -53,30 +60,30 @@ header {
   display: inline-block;
   margin: 0;
   width: 300px;
-  height: 80px;
+  height: 90px;
   font-size: 100%;
   vertical-align: baseline;
   position: relative;
 
   a {
-    top: 15px;
+    top: 20px;
     left: 15px;
     line-height: 1;
-    color: #333;
     text-decoration: none !important;
-    letter-spacing: 1px;
     position:absolute;
     img {
-      width: 230px;
+      width: 205px;
       height: auto;
     }
     span {
-      font-size: 1.67em;
+      font-size: 1.40em;
+      letter-spacing: 0.11em;
       color: $white;
       display: block;
-      border-top: 1px solid $white;
-      margin: 6px 0 0px;
-      padding-top: 4px;
+      border-top: 1px solid transparentize($white, 0.3);
+      margin: 10px 0 0;
+      padding-top: 9px;
+      font-weight: 300;
     }
   }
 }
@@ -85,29 +92,114 @@ header {
   margin-left: 0;
   margin-bottom: 0;
   position: relative;
-  .primary-menu-link {
-    &:last-child {
-      a:after {
-        content: "";
-      }
-    }
-  }
 }
 
 .primary-menu-link {
   display: inline-block;
   a {
-    padding: 32px 25px 25px;
+    padding: 37px 37px 25px;
     color: $white;
     display: inline-block;
-    font-size: 17px;
-    font-weight: 700;
-    &:after {
-      content: "/";
-      position: absolute;
-      font-size: 20px;
-      top: 28px;
-      margin-left: 19px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    text-transform: uppercase;
+    &:hover {
+      color: $turquoise;
+      text-decoration: none;
     }
+  }
+}
+
+/*Sidebar*/
+aside.sidebar {
+    width: 270px;
+    height: 654px;
+    float: left;
+    background-color: #232527;
+    margin-top: 20px;
+    padding: 20px 0;
+    border: 2px solid #15b4c9;
+    overflow: hidden;
+    position: relative;
+    &::-webkit-scrollbar {
+      display: none!important;
+    }
+    
+    .sidebar-wrapper {
+      width: 270px;
+      height: 654px;
+      position: absolute;
+      left: 0;
+      overflow-y: scroll;
+      overflow-x: hidden; 
+      &::-webkit-scrollbar {
+      display: none!important;
+    }
+
+    }
+    .photo-wrapper {
+      margin: 0 auto;
+      width: 155px;
+      height: 155px;
+      border-radius: 50%;
+      border: 2px solid #15b4c9;
+      display: block;
+      overflow: hidden;
+    }
+}
+
+ul.sidebar-nav {
+  /*margin: 20px 0;*/
+  padding: 20px 10px;
+  list-style: none;
+  color: $beige;
+  height: 100%;
+  overflow: auto;
+  li {
+    color: $beige;
+    font-size: 15px;
+    margin-bottom: 15px;
+    line-height: 1.63;
+    a, a:visited {
+      color: $beige;
+      text-decoration: none;
+    }
+    a:hover, a:active {
+      color: $turquoise;
+      text-decoration: none;
+      outline: none;
+    }
+  }
+}
+
+.box-shadow {
+  box-shadow: 0 2px 1px rgba(130,133,135,.2) !important;
+}
+
+.content {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  margin-left: 300px;
+  padding: 40px 25px;
+  background: $white;
+  border: 1px solid rgba(130, 133, 135, 0.2);
+  overflow: hidden;
+  p {
+    font-size: 15px;
+  }
+}
+
+/*Icons*/
+.icon {
+  border-radius: 50px;
+  background: $lightGrey;
+  display: inline-block;
+  position: relative;
+  &.small {
+    width: 25px;
+    height: 25px;
+    margin-right: 7px;
+    top: 7px;
   }
 }

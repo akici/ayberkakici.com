@@ -50,19 +50,73 @@
         <nav aria-labelledby="main-navigation" class="pull-left" role="navigation">
          <!-- <h2 class="for-screenreader" id="main-navigation">Main menu</h2>-->
           <ul class="primary-menu">
-            <li class="primary-menu-link"><a href="/about">About</a></li>
-            <li class="primary-menu-link"><a href="/work">Work</a></li>
-            <li class="primary-menu-link"><a href="/reading-list">Reading List</a></li>
-            <li class="primary-menu-link"><a href="/Contact">Contact</a></li>
+            <li class="primary-menu-link"><a href="/about">RESUME</a></li>
+            <li class="primary-menu-link"><a href="/work">WORK</a></li>
+            <li class="primary-menu-link"><a href="/reading-list">READING LIST</a></li>
+            <li class="primary-menu-link"><a href="/Contact">CONTACT</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-
-    <%= yield %>
-
-   
-
+    <div class="container">
+      <aside class="sidebar box-shadow">
+      <div class="sidebar-wrapper">
+        <div class="photo-wrapper">
+          <img src="<%= image_path 'ayberk_akici.jpg' %>" alt="Ayberk Akıcı" title="Ayberk Akıcı" class="img-responsive" />
+        </div>
+        <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <span class="icon small"></span>
+                    34381, Sisli / Istanbul
+                </li>
+                <li class="sidebar-brand">
+                    <span class="icon small"></span>
+                    <a href="tel: +905303470072">(+90) 530 347 00 72
+                    </a>
+                </li>
+                <li class="sidebar-brand">
+                    <span class="icon small"></span>
+                    <a href="mailto: ayberk@ayberkakici.com">ayberk@ayberkakici.com
+                    </a>
+                </li>
+                <li class="sidebar-brand">
+                    <span class="icon small"></span>
+                    <a href="https://github.com/akici" target="_blank">github.com/akici
+                    </a>
+                </li>
+                <li class="sidebar-brand">
+                    <span class="icon small"></span>
+                    <a href="https://bitbucket.org/akici" target="_blank">bitbucket.org/akici
+                    </a>
+                </li>
+                <li class="sidebar-brand">
+                    <span class="icon small"></span>
+                    <a href="https://www.xing.com/profile/Ayberk_AKICI" target="_blank">xing.com/profile/Ayberk_AKICI
+                    </a>
+                </li>
+                <li class="sidebar-brand">
+                    <span class="icon small"></span>
+                    <a href="https://codeschool.com/users/akici" target="_blank">codeschool.com/users/akici
+                    </a>
+                </li>
+                <li class="sidebar-brand">
+                    <span class="icon small"></span>
+                    <a href="https://twitter.com/ayberkakici" target="_blank">twitter.com/ayberkAKICI
+                    </a>
+                </li>
+                <li class="sidebar-brand">
+                    <span class="icon small"></span>
+                    15 October 1984
+                </li>
+                
+              
+            </ul>
+        </div>
+      </aside>
+      <div class="content box-shadow">
+        <%= yield %>
+      </div>
+    </div>
   </body>
 </html>
