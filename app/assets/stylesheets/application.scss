@@ -153,9 +153,6 @@ aside.sidebar {
     padding: 20px 0;
     overflow: hidden;
     position: relative;
-    -webkit-transition: position 4s;
-  -moz-transition: position 4s;
-  transition: position 4s;
     &.sidebar-fixed {
       top: 0;
       margin: 0;
@@ -170,7 +167,7 @@ aside.sidebar {
         height: 95%;
       }
       .photo-wrapper {
-        margin: 0 37px;
+        margin: 0 36.5px;
       }
     }
     .sidebar-wrapper {
@@ -203,13 +200,13 @@ aside.sidebar {
 }
 
 .animated {
-  animation-duration: 0.3s;
+  animation-duration: 0.2s;
   animation-fill-mode: both;
 }
 
 @keyframes slideInDown {
   from {
-    transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -75%, 0);
     visibility: visible;
   }
 
@@ -220,6 +217,22 @@ aside.sidebar {
 
 .slideInDown {
   animation-name: slideInDown;
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translate3d(0, 75%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInUp {
+  animation-name: slideInUp;
+  animation-duration: 0.2s;
 }
 
 ul.sidebar-nav {
