@@ -12,7 +12,6 @@
 //
 //= require jquery
 //= require bootstrap-sprockets
-
 $(function() {
 	function checkPosition() {
             if ($(this).scrollTop() > 200) {
