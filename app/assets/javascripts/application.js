@@ -19,6 +19,11 @@ $(function() {
             } else {
                 $('#goTop').fadeOut(300);
             }
+            if ($(this).scrollTop() > 110) {
+                $('#sidebar').addClass('sidebar-fixed slideInDown');
+            } else {
+                $('#sidebar').removeClass('sidebar-fixed slideInDown');
+            }
         }
         // Show or hide the sticky footer button
         $(window).scroll(checkPosition);

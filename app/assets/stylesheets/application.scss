@@ -153,10 +153,29 @@ aside.sidebar {
     padding: 20px 0;
     overflow: hidden;
     position: relative;
+    -webkit-transition: position 4s;
+  -moz-transition: position 4s;
+  transition: position 4s;
+    &.sidebar-fixed {
+      top: 0;
+      margin: 0;
+      position: fixed;
+      height: 100%;
+      .sidebar-wrapper {
+        position: absolute;
+        padding: 0 0 20px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        right: -20px;
+        height: 95%;
+      }
+      .photo-wrapper {
+        margin: 0 37px;
+      }
+    }
     .sidebar-wrapper {
       width: 270px;
       position: relative;
-      left: 0;
       padding: 0 20px; 
       overflow: hidden; 
     }
@@ -181,29 +200,26 @@ aside.sidebar {
     h5 {
       margin-bottom: 5px;
     }
-    .progress {
-      background-color: #eae8e7;
-      border-radius: 0;
-      height: 15px;
-      margin-bottom: 15px;
-    }
-    .progress-bar {
-      background-color: $lightGrey;
-      -webkit-animation: progress-bar 1s;
-      animation: progress-bar 1s;
-    }
 }
 
-@-webkit-keyframes progress-bar {
-  0% {
-      width: 0;
+.animated {
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
   }
 }
 
-@keyframes progress-bar {
-  0% {
-      width: 0;
-  }
+.slideInDown {
+  animation-name: slideInDown;
 }
 
 ul.sidebar-nav {
