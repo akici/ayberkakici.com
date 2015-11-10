@@ -14,15 +14,17 @@
 //= require bootstrap-sprockets
 $(function() {
 	function checkPosition() {
+		var goTop = $('#goTop'),
+			sidebar = $('#sidebar');
             if ($(this).scrollTop() > 200) {
-                $('#goTop').fadeIn(500);
+                goTop.fadeIn(500);
             } else {
-                $('#goTop').fadeOut(300);
+                goTop.fadeOut(300);
             }
             if ($(this).scrollTop() > 110) {
-                $('#sidebar').addClass('sidebar-fixed slideInDown');
+                sidebar.addClass('sidebar-fixed slideInDown');
             } else {
-                $('#sidebar').removeClass('sidebar-fixed slideInDown');
+                sidebar.removeClass('sidebar-fixed slideInDown');
             }
         }
         // Show or hide the sticky footer button
@@ -31,7 +33,6 @@ $(function() {
         // Animate the scroll to top
         $('.goTopAnchor').click(function(event) {
             event.preventDefault();
-
             $('html, body').animate({scrollTop: 0}, 600);
         })
 

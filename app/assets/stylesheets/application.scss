@@ -153,11 +153,21 @@ aside.sidebar {
     padding: 20px 0;
     overflow: hidden;
     position: relative;
+    .site-logo {
+      display: none;
+      margin: 0 0 10px -4px;
+      a {
+        cursor: pointer;
+      }
+    }
     &.sidebar-fixed {
       top: 0;
       margin: 0;
       position: fixed;
       height: 100%;
+      .site-logo {
+        display: block;
+      }
       .sidebar-wrapper {
         position: absolute;
         padding: 0 0 20px;
