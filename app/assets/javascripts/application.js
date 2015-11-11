@@ -22,9 +22,14 @@ $(function() {
                 goTop.fadeOut(300);
             }
             if ($(this).scrollTop() > 110) {
-                sidebar.addClass('sidebar-fixed slideInDown');
+                sidebar.addClass('sidebar-fixed');
+                sidebar.find('.photo-wrapper').addClass('slideInDown');
+                sidebar.find('.sidebar-nav').addClass('slideInDown');
             } else {
-                sidebar.removeClass('sidebar-fixed slideInDown');
+                sidebar.removeClass('sidebar-fixed');
+                sidebar.find('.photo-wrapper').removeClass('slideInDown');
+                sidebar.find('.sidebar-nav').removeClass('slideInDown');
+
             }
         }
         // Show or hide the sticky footer button
