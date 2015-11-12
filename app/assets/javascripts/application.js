@@ -25,7 +25,13 @@ $(function() {
                 sidebar.addClass('sidebar-fixed');
                 sidebar.find('.photo-wrapper').addClass('slideInDown');
                 sidebar.find('.sidebar-nav').addClass('slideInDown');
+                sidebar.find('.photo-wrapper').removeClass('slideInUp');
+                sidebar.find('.sidebar-nav').removeClass('slideInUp');
             } else {
+            	if(sidebar.hasClass('sidebar-fixed')) {
+            		sidebar.find('.photo-wrapper').addClass('slideInUp');
+            		sidebar.find('.sidebar-nav').addClass('slideInUp');
+            	}
                 sidebar.removeClass('sidebar-fixed');
                 sidebar.find('.photo-wrapper').removeClass('slideInDown');
                 sidebar.find('.sidebar-nav').removeClass('slideInDown');

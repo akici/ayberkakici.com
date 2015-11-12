@@ -168,18 +168,22 @@ aside.sidebar {
       height: 100%;
       .site-logo {
         display: block;
+        position: relative;
       }
-      .sidebar-wrapper {
-        position: absolute;
-        padding: 0 0 20px;
-        overflow-y: auto;
-        overflow-x: hidden;
-        right: -19px;
-        height: 95%;
+      .site-logo {
+        float: none;
+        display: block;
+        position: relative;
+        height: 80px;
+        width: 205px;
+        margin: 0 auto 20px;
+        a {
+          width: 205px;
+          left: auto;
+          position: relative;
+        }
       }
-      .photo-wrapper {
-        margin: 0 36.5px;
-      }
+    
     }
     .sidebar-wrapper {
       width: 270px;
@@ -297,7 +301,7 @@ ul.sidebar-nav {
   h2 {
     color: $darkGrey;
     margin-bottom: 25px;
-    letter-spacing: 1px;
+   font-weight: 400;
     /*&.line:after {
       content: '';
       width: 100%;
@@ -363,7 +367,7 @@ div#goTop {
   &.small {
     width: 25px;
     height: 25px;
-    margin-right: 7px;
+    margin-right: 4px;
     top: 7px;
     background-size: 70%;
     &.icon-github {
@@ -377,7 +381,7 @@ div#goTop {
     border-radius: 50%;
     width: 35px;
     height: 35px;
-    margin-right: 7px;
+    margin-right: 4px;
     top: 7px;
     background-color: $darkGreyText;
     background-size: 70%;
