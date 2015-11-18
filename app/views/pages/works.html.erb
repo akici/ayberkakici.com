@@ -1,4 +1,34 @@
 <%= content_for :title, 'Ayberk Akıcı - Front End Web Developer' %>
 <%= content_for :canonical, 'http://www.ayberkakici.com/works' %>
-
-<p style="height:1400px">My works will be here.</p>
+<%= content_for :content, 'content works' %>
+<h2>PROJECTS</h2>
+<div class="row">
+	<div class="col-xs-6">
+		<div class="project">
+			<div class="project__image"><img src="<%= image_path 'works/pso.png' %>" alt="PetSleepover" title="PetSleepover" style="margin-top: -58px" />
+				<div class="overlay">
+					<a href="http://www.petsleepover.com.au" target="_blank" rel="nofollow">
+						<h2>PetSleepover</h2>
+						<span>petsleepover.com.au</span>
+					</a>
+				</div>
+			</div>
+			<div class="project__enviroment"><h4>HTML, CSS, JavaScript &amp; jQuery</h4></div>
+			<div class="project__content"><p>PetSleepover is a service located in Australia where you can find a local, trusted Pet Sitter near you, for when you are away on holidays, business.</p></div>
+		</div>
+	</div>
+	<div class="col-xs-6">
+		<div class="project">
+			<div class="project__image"><img src="<%= image_path 'works/cardgusto.jpg' %>" alt="CardGusto" title="CardGusto" />
+				<div class="overlay">
+					<a rel="nofollow">
+						<h2>CardGusto</h2>
+						<span>Venue &amp; Admin Dashboard</span>
+					</a>
+				</div>
+			</div>
+			<div class="project__enviroment"><h4>HTML, CSS, JavaScript, jQuery &amp; D3.js</h4></div>
+			<div class="project__content"><p>CardGusto is mobile and web based CRM, Rewards and Loyalty Program and Software that helps tons of businesses to attract and retain customers easily.</p></div>
+		</div>
+	</div>
+</div>
