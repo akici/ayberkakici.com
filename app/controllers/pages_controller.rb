@@ -7,4 +7,7 @@ class PagesController < ApplicationController
     end
     def works
     end
+    def notifyMeJs
+      render :layout => 'notifyMeJs'
+  	end
   end 

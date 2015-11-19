@@ -1,12 +1,14 @@
 Rails.application.routes.draw do
   PagesController.action_methods.each do |action|
     get "/#{action}", to: "pages##{action}", as: "#{action}_page"
+    get "notifyMe.js", to: "pages#notifyMeJs"
   end
 
 	root to: 'pages#home'
 
   resources :projects
   get "*any", via: :all, to: "errors#not_found"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
