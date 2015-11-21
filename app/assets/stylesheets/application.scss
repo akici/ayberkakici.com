@@ -395,6 +395,7 @@ div#goTop {
 .project {
   width: 100%;
   padding: 0;
+  margin-bottom: 30px;
   background-color: $white;
   border: 1px solid rgba(130, 133, 135, 0.2);
   position: relative;
@@ -412,7 +413,7 @@ div#goTop {
     transition: all 1s;
     &:hover {
       img {
-        transform: scale(1.17);
+        transform: scale(1.2);
         transition: all 6s;
       }
       .overlay {
@@ -429,7 +430,6 @@ div#goTop {
       /*background-color: rgba(0,0,0,0.75);*/
       background-color: rgba(21,180,201,.9);
       transition: all 1s;
-      display: table;
       cursor: pointer;
       a {
         width: 100%;
@@ -459,7 +459,7 @@ div#goTop {
     }
     img {
       /*opacity: 0;*/
-      width: 100%;
+      max-width: 100%;
       height: auto;
       transition: all 1.5s;
     }
