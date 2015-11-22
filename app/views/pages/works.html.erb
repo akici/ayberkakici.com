@@ -1,8 +1,23 @@
 <%= content_for :title, 'Ayberk Akıcı - Front End Web Developer' %>
 <%= content_for :canonical, 'http://www.ayberkakici.com/works' %>
 <%= content_for :content, 'content works' %>
-<h2>PROJECTS</h2>
+<h1 class="mt0">WORKS</h1>
+<h2>Recent Projects</h2>
 <div class="row">
+	<div class="col-xs-6">
+		<div class="project">
+			<div class="project__image"><img src="<%= image_path 'works/arikovani.png' %>" alt="Arıkovanı" title="Arıkovanı" />
+				<div class="overlay">
+					<a href="https://arikovani.com" target="_blank" rel="nofollow">
+						<h2>Arıkovanı</h2>
+						<span>arikovani.com</span>
+					</a>
+				</div>
+			</div>
+			<div class="project__enviroment"><h4>HTML, CSS, JavaScript &amp; jQuery</h4></div>
+			<div class="project__content"><p>Arıkovanı is the primary Turkish crowdfunding platform for projects focusing on innovation and technology. It is powered by YGA and Turkcell.</p></div>
+		</div>
+	</div>
 	<div class="col-xs-6">
 		<div class="project">
 			<div class="project__image"><img src="<%= image_path 'works/pso.png' %>" alt="PetSleepover" title="PetSleepover" />
@@ -17,18 +32,20 @@
 			<div class="project__content"><p>PetSleepover is a service located in Australia where you can find a local, trusted Pet Sitter near you, for when you are away on holidays, business.</p></div>
 		</div>
 	</div>
+	
 	<div class="col-xs-6">
 		<div class="project">
-			<div class="project__image"><img src="<%= image_path 'works/cardgusto.jpg' %>" alt="CardGusto" title="CardGusto" />
+			<div class="project__image"><img src="<%= image_path 'works/filogo.png' %>" alt="Filogo" title="Filogo" />
 				<div class="overlay">
-					<a rel="nofollow">
-						<h2>CardGusto</h2>
-						<span>Venue &amp; Admin Dashboard</span>
+					<a href="http://filogo.solidict.com" target="_blank" rel="nofollow">
+						<h2>FILOGO</h2>
+						<span>filogo.solidict.com</span>
+						<span>a.k.a. FreightMatcher</span>
 					</a>
 				</div>
 			</div>
-			<div class="project__enviroment"><h4>HTML, CSS, JavaScript, jQuery &amp; D3.js</h4></div>
-			<div class="project__content"><p>CardGusto is mobile and web based CRM, Rewards and Loyalty Program and Software that helps tons of businesses to attract and retain customers easily.</p></div>
+			<div class="project__enviroment"><h4>HTML, CSS, JavaScript &amp; jQuery + Backbone.js</h4></div>
+			<div class="project__content"><p>Although Filogo was an incomplete project due to client's attitude, I am presenting it here since it was developed by using Backbone.js &amp; Require.js</p></div>
 		</div>
 	</div>
 	<div class="col-xs-6">
@@ -45,18 +62,63 @@
 			<div class="project__content"><p>NotifyMe.js is a pure JavaScript mini library to create text notifications on screen corners. It has been written as my O'Reilly JS course's final project.</p></div>
 		</div>
 	</div>
+
 	<div class="col-xs-6">
 		<div class="project">
-			<div class="project__image"><img src="<%= image_path 'works/arikovani.png' %>" alt="Arıkovanı" title="Arıkovanı" />
+			<div class="project__image"><img src="<%= image_path 'works/akca.png' %>" alt="Akca Lojistik" title="Akca Lojistik" />
 				<div class="overlay">
-					<a href="https://arikovani.com" target="_blank" rel="nofollow">
-						<h2>Arıkovanı</h2>
-						<span>arikovani.com</span>
+					<a href="http://www.akcalojistik.com" target="_blank" rel="nofollow">
+						<h2>Akca Lojistik</h2>
+						<span>www.akcalojistik.com</span>
 					</a>
 				</div>
 			</div>
 			<div class="project__enviroment"><h4>HTML, CSS, JavaScript &amp; jQuery</h4></div>
-			<div class="project__content"><p>Arıkovanı is the first Turkish crowdfunding platform for projects focusing on innovation and technology. It is powered by Young Guru Academy and Turkcell.</p></div>
+			<div class="project__content"><p>Akca Lojistik offers integrated logistics services to its customers through integrating inbound shipments, warehousing services and distribution network.</p></div>
+		</div>
+	</div>
+
+	<div class="col-xs-6">
+		<div class="project">
+			<div class="project__image"><img src="<%= image_path 'works/mentorumveben.png' %>" alt="Mentorum ve Ben" title="Mentorum ve Ben" />
+				<div class="overlay">
+					<a href="http://mentorumveben.biz" target="_blank" rel="nofollow">
+						<h2>Mentorum ve Ben</h2>
+						<span>mentorumveben.biz</span>
+					</a>
+				</div>
+			</div>
+			<div class="project__enviroment"><h4>HTML, CSS, JavaScript &amp; jQuery</h4></div>
+			<div class="project__content"><p>This portal is supported within the scope of Istanbul Development Agency's financial assistance programs,Mentoring and Investors Network Building.</p></div>
+		</div>
+	</div>
+	
+	<div class="col-xs-6">
+		<div class="project">
+			<div class="project__image"><img src="<%= image_path 'works/cardesim.png' %>" alt="Cardesim" title="Cardesim" />
+				<div class="overlay">
+					<a href="http://cardesim.com" target="_blank" rel="nofollow">
+						<h2>Cardesim</h2>
+						<span>cardesim.com</span>
+					</a>
+				</div>
+			</div>
+			<div class="project__enviroment"><h4>HTML, CSS, JavaScript &amp; jQuery</h4></div>
+			<div class="project__content"><p>Cardesim offers discounts and deals for university students up to 50% off at over 585 places ranging from dining and shopping to entertainment locations.</p></div>
+		</div>
+	</div>
+	<div class="col-xs-6">
+		<div class="project">
+			<div class="project__image"><img src="<%= image_path 'works/cardgusto.jpg' %>" alt="CardGusto" title="CardGusto" />
+				<div class="overlay">
+					<a rel="nofollow">
+						<h2>CardGusto</h2>
+						<span>Venue &amp; Admin Dashboard</span>
+					</a>
+				</div>
+			</div>
+			<div class="project__enviroment"><h4>HTML, CSS, JavaScript, jQuery &amp; D3.js</h4></div>
+			<div class="project__content"><p>CardGusto is mobile and web based CRM, Rewards and Loyalty Program and Software that helps tons of businesses to attract and retain customers easily.</p></div>
 		</div>
 	</div>
 </div>
