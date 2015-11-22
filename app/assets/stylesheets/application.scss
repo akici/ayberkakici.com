@@ -79,7 +79,7 @@ header {
 
   a {
     top: 20px;
-    left: 15px;
+    left: 31px;
     line-height: 1;
     text-decoration: none !important;
     position:absolute;
@@ -149,7 +149,7 @@ aside.sidebar {
     float: left;
     color: $beige;
     background-color: #232527;
-    margin-top: 20px;
+    margin-top: 0;
     padding: 20px 0;
     overflow: hidden;
     position: absolute;
@@ -164,6 +164,7 @@ aside.sidebar {
       top: 0;
       margin: 0;
       position: fixed;
+      border-top: 3px solid #15b4c9;
       height: 100%;
       .site-logo {
         display: block;
@@ -406,10 +407,7 @@ div#goTop {
 
 .project__image {
     width: 100%;
-    height: 239px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    height: 180px;
     overflow: hidden;
     position: relative;
     transition: all 1s;
@@ -417,6 +415,8 @@ div#goTop {
       img {
         transform: scale(1.2);
         transition: all 6s;
+        -webkit-filter: grayscale(0);
+        filter: grayscale(0);
       }
       .overlay {
         opacity: 1;
@@ -452,8 +452,9 @@ div#goTop {
         text-align: center;
       }
       h2 {
-        margin-top: 90px;
+        margin-top: 65px;
         margin-bottom: 10px;
+        letter-spacing: 1.3px;
       }
       span {
         font-size: 15px;
@@ -464,6 +465,8 @@ div#goTop {
       max-width: 100%;
       height: auto;
       transition: all 1.5s;
+      -webkit-filter: grayscale(0.95);
+      filter: grayscale(0.95);
     }
   }
 .project__enviroment {
@@ -474,6 +477,9 @@ div#goTop {
       font-size: 15px;
       font-weight: 400;
       margin: 0;
+    }
+    &.open-source {
+      background-color: $turquoise;
     }
   }
 .project__content {
