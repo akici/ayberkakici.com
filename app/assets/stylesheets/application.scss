@@ -53,9 +53,19 @@ a {
 
 /* ~~ this fixed width container surrounds all other elements ~~ */
 .container {
-	width: 1140px !important;
-  max-width: none !important;
 	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+
+@media (min-width: 1200px) {
+.container {
+    width: 1090px;
+}
+}
+
+@media (max-width: 1199px) {
+.container {
+    width: auto;
+}
 }
 
 /*Header*/
@@ -67,9 +77,9 @@ header {
   overflow: hidden;
 }
 
-nav {
+/*nav {
   width: 840px;
-}
+}*/
 
 .site-logo {
   float: left;
@@ -104,13 +114,27 @@ nav {
   }
 }
 
+nav.sub-menu {
+    background-color: #15b4c9;
+    height: 30px;
+    width: 100%;
+    display: table;
+    overflow: hidden;
+    line-height: 30px;
+}
+
+.sub-menu a {
+    color: #fff !important;
+    font-size: 18px;
+    display: block;
+}
+
 .motto-text {
   color: #fff;
   font-size: 18px;
   line-height: 1.25;
   font-weight: 300;
-  padding-left: 55px;
-  margin: 25px 0 0 0;
+  /*padding-left: 55px;*/
   font-style: italic;
   display: block;
   letter-spacing: 0.8px;
@@ -326,7 +350,8 @@ ul.sidebar-nav {
   h2 {
     color: $darkGrey;
     margin-bottom: 25px;
-   font-weight: 400;
+    font-size: 27px;
+    font-weight: 400;
     /*&.line:after {
       content: '';
       width: 100%;
@@ -362,6 +387,43 @@ ul.sidebar-nav {
       margin-top: 0;
       list-style-type: circle;
     }
+  }
+}
+
+@media (max-width: 767px) { 
+  .site-logo {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+  nav {
+    text-align: center;
+  }
+  .motto-text {
+    margin: 10px 0;
+  }
+  .content {
+    margin-left: 0;
+  }
+  .sidebar {
+    display: none;
+  }
+}
+
+@media(min-width: 768px) {
+  nav {
+     margin-left: 270px;
+     height: 90px;
+  }
+  nav.sub-menu {
+    display: none;
+  }
+  .motto-text {
+    padding-left: 55px;
+    margin: 0;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 
@@ -404,12 +466,13 @@ div#goTop {
   }
   &.big {
     border-radius: 50%;
-    width: 35px;
-    height: 35px;
-    margin-right: 4px;
-    top: 7px;
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+    top: 5px;
     background-color: $darkGreyText;
     background-size: 70%;
+    /*float: left;*/
   }
 }
 
@@ -425,7 +488,7 @@ div#goTop {
 
 .project__image {
     width: 100%;
-    height: 180px;
+    /*height: 180px;*/
     overflow: hidden;
     position: relative;
     transition: all 1s;
@@ -481,6 +544,7 @@ div#goTop {
     img {
       /*opacity: 0;*/
       max-width: 100%;
+      width: 100%;
       height: auto;
       transition: all 1.5s;
       -webkit-filter: grayscale(0.95);
