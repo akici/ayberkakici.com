@@ -71,7 +71,8 @@ $(function() {
         }
    }
 
-	function checkPositionForSidebar() {
+	function checkPositionForSidebar() { //Only for Desktop
+        $('body').removeClass('header-fixed');
 	  var sidebar = $('#sidebar');
       if ($(this).scrollTop() > 110) {
         sidebar.addClass('sidebar-fixed');

@@ -408,6 +408,19 @@ ul.sidebar-nav {
   .sidebar {
     display: none;
   }
+  .photo-wrapper-resume {
+    margin: 0 auto;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+  }
+  .greetings {
+    text-align: center;
+  }
 }
 
 .header-fixed header {
@@ -421,7 +434,7 @@ ul.sidebar-nav {
 }
 
 .header-fixed .content {
-    margin-top: 305px;
+    margin-top: 295px;
 }
 
 .header-fixed a.logo {
