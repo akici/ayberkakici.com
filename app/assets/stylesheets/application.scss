@@ -123,10 +123,35 @@ nav.sub-menu {
     line-height: 30px;
 }
 
+nav.sub-menu ul {
+    list-style: none;
+    display: table;
+    width: 100%;
+    margin: 0;
+    padding: 0 25px;
+    height: 30px;
+}
+
+nav.sub-menu ul li {
+    float: left;
+    width: 33.333%;
+    height: 30px;
+    line-height: 30px;
+}
+
 .sub-menu a {
     color: #fff !important;
     font-size: 18px;
-    display: block;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.sub-list a {
+    color: inherit !important;
+}
+
+.p0 {
+  padding: 0 !important;
 }
 
 .motto-text {
@@ -423,6 +448,14 @@ ul.sidebar-nav {
   }
 }
 
+.text-left {
+  text-align: left !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
 .photo-wrapper-resume {
     display: none;
 }
@@ -459,6 +492,15 @@ ul.sidebar-nav {
     line-height: 20px;
 }
 
+.header-fixed nav.sub-menu ul {
+  height: 20px;
+}
+
+.header-fixed nav.sub-menu ul li {
+  height: 20px;
+  line-height: 20px;
+}
+
 .header-fixed .sub-menu a {
     font-size: 14px;
 }
@@ -477,6 +519,9 @@ ul.sidebar-nav {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+  }
+  .personal-links {
+    display: none;
   }
 }
 
