@@ -410,6 +410,42 @@ ul.sidebar-nav {
   }
 }
 
+.header-fixed header {
+    position: fixed;
+    top: 0;
+    z-index: 5;
+}
+
+.header-fixed h4.motto-text {
+    display: none;
+}
+
+.header-fixed .content {
+    margin-top: 305px;
+}
+
+.header-fixed a.logo {
+    top: 10px;
+}
+
+.header-fixed h1.site-logo {
+    transform: scale(0.70);
+    height: 75px;
+    top: 0;
+}
+
+.header-fixed nav.sub-menu {
+    position: fixed;
+    top: 77px;
+    z-index: 5;
+    height: 20px;
+    line-height: 20px;
+}
+
+.header-fixed .sub-menu a {
+    font-size: 14px;
+}
+
 @media(min-width: 768px) {
   nav {
      margin-left: 270px;
