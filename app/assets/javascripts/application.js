@@ -17,7 +17,6 @@ $(function() {
         checkDesktop = window.matchMedia("only screen and (min-width: 768px)");
 
         $(window).on('desktop', function(e) {
-        console.log('desktop');
         checkPositionForSidebar();
         $(window).unbind('scroll');
         $(window).scroll(function() {
@@ -27,7 +26,6 @@ $(function() {
         });
 
         $(window).on('mobile', function(e) {
-        console.log('mobile');
         checkPositionHeader();
             $(window).unbind('scroll');
             $(window).scroll(function() {
@@ -112,6 +110,15 @@ $(function() {
             event.preventDefault();
             $('html, body').animate({scrollTop: 0}, 600);
         })
+
+        $('#go-links').click(function(event){
+            /*event.preventDefault();*/
+            $('html, body').animate({scrollTop: $('#personal-links').offset().top}, 600);
+        });
+
+        if(window.location.hash === '#personal-links') {
+            $('html, body').animate({scrollTop: $('#personal-links').offset().top}, 600);
+        }
 
         /*checkPosition();*/
 });
