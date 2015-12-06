@@ -413,7 +413,7 @@ ul.sidebar-nav {
     width: 110px;
     height: 110px;
     border-radius: 50%;
-    display: block;
+    display: block !important;
     position: relative;
     overflow: hidden;
     z-index: 2;
@@ -421,6 +421,10 @@ ul.sidebar-nav {
   .greetings {
     text-align: center;
   }
+}
+
+.photo-wrapper-resume {
+    display: none;
 }
 
 .header-fixed header {
