@@ -141,7 +141,7 @@ nav.sub-menu ul li {
 
 .sub-menu a {
     color: #fff !important;
-    font-size: 18px;
+    font-size: 14px;
     display: inline-block;
     cursor: pointer;
 }
@@ -490,6 +490,7 @@ ul.sidebar-nav {
     z-index: 5;
     height: 20px;
     line-height: 20px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.3);
 }
 
 .header-fixed nav.sub-menu ul {
