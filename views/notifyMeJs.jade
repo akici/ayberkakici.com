@@ -1,0 +1,99 @@
+doctype html
+html
+  head
+    title= title
+    link(type='text/css' rel='stylesheet', href='//fonts.googleapis.com/css?family=Open+Sans:300,500,600')
+    link(rel='stylesheet', href='/stylesheets/notifyMe-demo.css')
+    link(rel='stylesheet', href='/stylesheets/notifyMe.min.css')
+    link(rel='canonical', href= url)
+    link(type='image/x-icon', rel='icon', href='/images/favicon.ico')
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui')
+    meta(name='description', content='Simple Text Notifications on Screen Corners')
+    meta(http-equiv='x-dns-prefetch-control', content='on')
+    script(type='text/javascript', src='/javascripts/notifyMe.min.js')
+    script(type='text/javascript').
+      window.onload = function(){
+            notifyMe.create({
+                position: 'topLeft',
+                type: 'info',
+                title: 'NotifyMe Example with 5000ms timeout',
+                text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent consequat enim non sapien venenatis sollicitudin',
+                timeout: 5000,
+                pauseOnHover: true,
+                closeBtn: true,
+                addClass: 'additional-class',
+                click: function(){
+                    alert('clicked');
+                }
+            });
+            var runCode = function(){
+              var btns = document.getElementsByClassName('run-code');
+              for (var i=0; i<btns.length; i++) {
+                btns[i].onclick = function() {
+                  var code = this.parentNode.nextElementSibling.childNodes[0].textContent.trim();
+                  var newFunction = new Function(code);
+                  newFunction();
+                }
+              }
+            }();
+        };
+
+  body
+    a(href='https://github.com/akici/notifyMe.js', target='_blank')
+      img(style='position: fixed; top: 0; left: 0; border: 0;', src='https://camo.githubusercontent.com/82b228a3648bf44fc1163ef44c62fcc60081495e/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f7265645f6161303030302e706e67', alt='Fork me on GitHub', data-canonical-src='https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png')
+    .container
+      h1.title NotifyMe.js
+      h4.subtitle Simple Text notifications on screen corners
+      h5.example Example #1 (Built-in Example) 
+        button.run-code Run Code
+      pre
+        code.javascript.hljs
+          | notifyMe.create({
+          |    position: <span class="hljs-string">'topLeft'</span>,<span class="hljs-comment">//Positions are: ['topRight', 'topLeft', 'bottomLeft', 'bottomRight'],optional field with default value: 'topRight'</span>
+          |    type: <span class="hljs-string">'info'</span>, <span class="hljs-comment">// Types are: ['info', 'warning', 'success', 'error'], optional field with default value: 'info'</span>
+          |    title: <span class="hljs-string">'NotifyMe Example with 5000ms timeout'</span>, <span class="hljs-comment">//required field</span>
+          |    text: <span class="hljs-string">'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent consequat enim non sapien venenatis sollicitudin'</span>, <span class="hljs-comment">// required field</span>
+          |    timeout: <span class="hljs-number">5000</span>, <span class="hljs-comment">// Remove notification after timeout expire, optional field without default value</span>
+          |    pauseOnHover: <span class="hljs-number">true</span>, <span class="hljs-comment">//Pause the timeout when mouse is over the notification, true or false, optional field with default value: false</span>
+          |    closeBtn: <span class="hljs-number">true</span>, <span class="hljs-comment">//Shows a close button, true or false, optional field with default value: true</span>
+          |    addClass: <span class="hljs-number">'additional-class'</span>, <span class="hljs-comment">// Add 'additional-class' into existing class names, optional field without default value</span>
+          |    click: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{ <span class="hljs-comment">//Click event handler function, optional field without default value</span>
+          |      alert('clicked');
+          |    } 
+          | });
+
+      h5.example Example #2
+        button.run-code Run Code
+      pre
+        code.javascript.hljs
+          | notifyMe.create({
+          |    type: <span class="hljs-string">'success'</span>, <span class="hljs-comment">// Types are: ['info', 'warning', 'success', 'error'], optional field with default value: 'info'</span>
+          |    title: <span class="hljs-string">'NotifyMe Success Example'</span>, <span class="hljs-comment">//required field</span>
+          |    text: <span class="hljs-string">'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent consequat enim non sapien venenatis sollicitudin'</span><span class="hljs-comment">// required field</span>
+          | });
+
+      h5.example Example #3
+        button.run-code Run Code
+      pre
+        code.javascript.hljs
+          | notifyMe.create({
+          |    position: <span class="hljs-string">'bottomLeft'</span>,<span class="hljs-comment">//Positions are: ['topRight', 'topLeft', 'bottomLeft', 'bottomRight'],optional field with default value: 'topRight'</span>
+          |    type: <span class="hljs-string">'error'</span>, <span class="hljs-comment">// Types are: ['info', 'warning', 'success', 'error'], optional field with default value: 'info'</span>
+          |    title: <span class="hljs-string">'NotifyMe Error Example'</span>, <span class="hljs-comment">//required field</span>
+          |    text: <span class="hljs-string">'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent consequat enim non sapien venenatis sollicitudin'</span><span class="hljs-comment">// required field</span>
+          | });
+
+      h5.example Example #4
+        button.run-code Run Code
+      pre
+        code.javascript.hljs
+          | notifyMe.create({
+          |    position: <span class="hljs-string">'bottomRight'</span>,<span class="hljs-comment">//Positions are: ['topRight', 'topLeft', 'bottomLeft', 'bottomRight'],optional field with default value: 'topRight'</span>
+          |    type: <span class="hljs-string">'warning'</span>, <span class="hljs-comment">// Types are: ['info', 'warning', 'success', 'error'], optional field with default value: 'info'</span>
+          |    title: <span class="hljs-string">'NotifyMe Warning Example with 10000ms timeout'</span>, <span class="hljs-comment">//required field</span>
+          |    text: <span class="hljs-string">'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent consequat enim non sapien venenatis sollicitudin'</span>, <span class="hljs-comment">// required field</span>
+          |    timeout: <span class="hljs-number">10000</span>, <span class="hljs-comment">// Remove notification after timeout expire, optional field without default value</span>
+          |    closeBtn: <span class="hljs-number">false</span> <span class="hljs-comment">//Shows a close button, true or false, optional field with default value: true</span>
+          | });

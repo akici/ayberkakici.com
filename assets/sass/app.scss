@@ -1,0 +1,121 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600);
+@import 'bootstrap';
+@import 'vars';
+@import 'header';
+@import 'sidebar';
+@import 'home';
+@import 'works';
+
+
+body {
+    font: 100%/1.4 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    background-color: #eae8e7;
+    margin: 0;
+    padding: 0;
+    color: #343434;
+    overflow-y: auto;
+    padding-bottom: 35px;
+  }
+  
+  html, body {
+    height: 100%;
+  }
+  
+  a {
+    transition: all .25s ease;
+    &:focus {
+        outline: 0;
+        text-decoration: none;
+      }
+  }
+
+.container {
+    @media (min-width: 1200px) {
+        width: 1090px;
+    }
+    @media (max-width: 1199px) {
+        width: auto; 
+    }
+}
+  
+.hide-text {
+    width: 0;
+    height: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.p0 {
+    padding: 0 !important;
+}  
+  
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+.mt30 {
+  margin-top: 30px;
+}
+
+.box-shadow {
+  box-shadow: 0 2px 1px rgba(130,133,135,.2) !important;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-right {
+  text-align: right !important;
+} 
+  
+.goTopAnchor {
+  cursor: pointer;
+  span {
+    width: 32px;
+    height: 32px;
+    display: block;
+  }
+}
+
+div#goTop {
+  position: fixed;
+  display: block;
+  z-index: 9;
+  bottom: 2%;
+  right: 2%;
+}
+
+
+/*Icons*/
+.icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  &.small {
+    width: 25px;
+    height: 25px;
+    margin-right: 4px;
+  }
+  &.big {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+    background-color: $darkGreyText;
+  }
+  svg {
+    fill: $white;
+    width: 70%;
+    height: 70%;
+  }
+}

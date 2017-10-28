@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/'+assets.css)
+    link(rel='canonical', href= url)
+    link(type='image/x-icon', rel='icon', href='/images/favicon.ico')
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui')
+    meta(name='description', content='Find out about me, what I do, and have a look at my CV. Ayberk Akıcı is an experienced front end web developer writing HTML, CSS and JavaScript')
+    meta(http-equiv='x-dns-prefetch-control', content='on')
+  body
+    include header.jade
+    .container
+      include sidebar.jade
+      block content
+    script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js', crossorigin='anonymous')
+    script(src= '/'+assets.js, crossorigin='anonymous')

@@ -1,0 +1,159 @@
+header {
+    border-bottom: 2px solid #15b4c9;
+    background: #232527;
+    width: 100%;
+    overflow: hidden;
+}
+
+.header-wrapper {
+    display: flex;
+    flex-direction: row;
+    @media (min-width: 768px) {
+        height: 90px;
+    }
+    @media (max-width: 767px) {
+        flex-direction: column;
+    }
+}
+
+.site-logo {
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    font-size: 100%;
+    flex: 0 0 270px;
+
+    a {
+        line-height: 1;
+        text-decoration: none !important;
+        align-self: center;
+        display: block;
+
+        svg {
+            width: 205px;
+            height: auto;
+        }
+
+        span {
+            font-size: 1em;
+            letter-spacing: 0.2em;
+            color: white;
+            display: block;
+            border-top: 1px solid rgba(255, 255, 255, 0.7);
+            margin: 6px 0 0;
+            padding-top: 5px;
+            font-weight: 300;
+          }
+    }
+
+    @media (max-width: 767px) {
+        float: none;
+        margin: 20px auto 0;
+        flex: none;
+    }
+
+}
+
+.motto-text {
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.25;
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: 0.8px;
+    @media (min-width: 768px) {
+        padding-left: 55px;
+        margin: 0;
+        position: relative;
+        align-self: center;
+    }
+    @media (max-width: 767px) {
+        margin: 15px 0;
+        text-align: center;
+    }
+}
+
+nav.sub-menu {
+    background-color: #15b4c9;
+    height: 30px;
+    width: 100%;
+    display: table;
+    overflow: hidden;
+    line-height: 30px;
+    @media(min-width: 768px) {
+        display: none;
+    }
+}
+
+nav.sub-menu ul {
+    list-style: none;
+    display: table;
+    width: 100%;
+    margin: 0;
+    padding: 0 25px;
+    height: 30px;
+}
+
+nav.sub-menu ul li {
+    float: left;
+    width: 33.333%;
+    height: 30px;
+    line-height: 30px;
+}
+
+.sub-menu a {
+    color: #fff !important;
+    font-size: 14px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.sub-list a {
+    color: inherit !important;
+}
+
+.header-fixed header {
+    position: fixed;
+    top: 0;
+    z-index: 5;
+  }
+  
+  .header-fixed h4.motto-text {
+    display: none;
+  }
+  
+  .header-fixed .content {
+    margin-top: 295px;
+  }
+  
+  .header-fixed a.logo {
+    top: 10px;
+  }
+  
+  .header-fixed h1.site-logo {
+    transform: scale(0.7);
+    height: 75px;
+    margin: 0 auto;
+  }
+  
+  .header-fixed nav.sub-menu {
+    position: fixed;
+    top: 77px;
+    z-index: 5;
+    height: 20px;
+    line-height: 20px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  }
+  
+  .header-fixed nav.sub-menu ul {
+    height: 20px;
+  }
+  
+  .header-fixed nav.sub-menu ul li {
+    height: 20px;
+    line-height: 20px;
+  }
+  
+  .header-fixed .sub-menu a {
+    font-size: 14px;
+  }
