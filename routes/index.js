@@ -4,12 +4,12 @@ var assets = require('../assets.json');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Ayberk Akıcı - Frontend Developer from Berlin', url: req.hostname, assets: assets.main });
+  res.render('index', { title: 'Ayberk Akıcı - Frontend Developer located in Berlin', url: req.hostname, assets: assets.main });
 });
 
 /* GET home page. */
 router.get('/works', function(req, res, next) {
-  res.render('works', { title: 'Works | Ayberk Akıcı - Frontend Developer from Berlin', url: req.hostname + req.path, assets: assets.main});
+  res.render('works', { title: 'Works - Ayberk Akıcı - Frontend Developer located in Berlin', url: req.hostname + req.path, assets: assets.main});
 });
 
 /* GET home page. */

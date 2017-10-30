@@ -80,7 +80,7 @@ h1, h2, h3 {
   
 .goTopAnchor {
   cursor: pointer;
-  color: $darkGreyText !important;
+  color:  $white !important;
   text-decoration: none !important;
   display: inline-flex;
   span {
@@ -95,6 +95,7 @@ div#goTop {
   z-index: 9;
   bottom: 2%;
   right: 2%;
+  background-color: $lightGrey;
 }
 
 

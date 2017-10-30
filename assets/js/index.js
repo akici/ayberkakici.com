@@ -44,12 +44,17 @@ $(function() {
         isDesktop(event);
      });
 
-     
+     var timeout;
+     var goTop = $('#goTop');
 
    function checkPositionForGoTop() {
-        var goTop = $('#goTop');
+        
         if (window.pageYOffset > 200) {
+            clearTimeout(timeout);
             goTop.fadeIn(500);
+            timeout = setTimeout(function() {
+                goTop.fadeOut(300);
+            }, 2500);
         } else {
             goTop.fadeOut(300);
         }

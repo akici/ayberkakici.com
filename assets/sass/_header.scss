@@ -124,8 +124,9 @@ nav.sub-menu ul li {
     display: none;
   }
   
-  .header-fixed .content {
-    margin-top: 295px;
+  .header-fixed .content, .header-fixed .content.works {
+    margin-top: 360px;
+
   }
   
   .header-fixed a.logo {
