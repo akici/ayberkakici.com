@@ -5,10 +5,19 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var stylus = require('stylus');
+var basicAuth = require('basic-auth')
 
 var index = require('./routes/index');
 
 var app = express();
+
+function auth(req, res, next) {
+  var objUser = basicAuth(req);
+  if (objUser === undefined || objUser.name !== 'şafak' || objUser.pass !== 'sürçülisan') {
+    res.set('WWW-Authenticate', 'Basic realm=Authorization Required');
+    res.status(401).end();
+  } else { next() }
+}
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -21,7 +30,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(stylus.middleware(path.join(__dirname, 'public')));
-app.use(express.static(path.join(__dirname, 'public')));
+app.use('/entra', auth);
+app.use(express.static(path.join(__dirname, 'public'), { dotfiles: 'allow' }));
 
 app.use('/', index);
 
