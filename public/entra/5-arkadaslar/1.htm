@@ -1,0 +1,1727 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)https://limesurvey.entra.uni-bamberg.de/index.php/330177 -->
+<html lang="tr" dir="ltr" class="tr dir-ltr  js "><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="noindex, nofollow" /><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="LimeSurvey http://www.limesurvey.org">
+
+        
+
+    <link rel="stylesheet" type="text/css" href="../assets/noto.css">
+<link rel="stylesheet" type="text/css" href="../assets/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="../assets/survey.css">
+<link rel="stylesheet" type="text/css" href="../assets/template-core.css">
+<link rel="stylesheet" type="text/css" href="../assets/awesome-bootstrap-checkbox.css">
+<link rel="stylesheet" type="text/css" href="../assets/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../assets/yiistrap.min.css">
+<link rel="stylesheet" type="text/css" href="../assets/ajaxify.css">
+<link rel="stylesheet" type="text/css" href="../assets/base.css">
+<link rel="stylesheet" type="text/css" href="../assets/theme.css">
+<link rel="stylesheet" type="text/css" href="../assets/custom.css">
+<script type="text/javascript">window.debugState = {frontend : (0 === 1), backend : (0 === 1)};</script><script type="text/javascript" src="../assets/jquery-3.1.1.min.js" class="headScriptTag"></script>
+<script type="text/javascript" src="../assets/jquery-migrate-3.0.0.min.js" class="headScriptTag"></script>
+<script type="text/javascript" src="../assets/lslog.js" class="headScriptTag"></script>
+<script type="text/javascript" src="../assets/pjax.js" class="headScriptTag"></script>
+<script type="text/javascript" src="../assets/moment-with-locales.min.js" class="headScriptTag"></script>
+<script type="text/javascript" src="../assets/survey.js" class="headScriptTag"></script>
+<script type="text/javascript" src="../assets/template-core.js" class="headScriptTag"></script>
+<script type="text/javascript" src="../assets/bootstrap.min.js" class="headScriptTag"></script>
+<script type="text/javascript" src="../assets/bootstrapconfirm.min.js" class="headScriptTag"></script>
+<script type="text/javascript" src="../assets/theme.js" class="headScriptTag"></script>
+<script type="text/javascript" src="../assets/ajaxify.js" class="headScriptTag"></script>
+<script type="text/javascript" src="../assets/custom.js" class="headScriptTag"></script>
+<script type="text/javascript" src="../assets/survey_runtime.js" class="headScriptTag"></script>
+<script type="text/javascript" src="../assets/em_javascript.js" class="headScriptTag"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+LSvar={"bFixNumAuto":1,"bNumRealValue":0,"sLEMradix":".","lang":{"confirm":{"confirm_cancel":"\u0130ptal","confirm_ok":"Tamam"}},"showpopup":1,"startPopups":{},"debugMode":0};
+/*]]>*/
+</script>
+<title>
+        31_ENTRA_MainSurvey_CAWI
+    </title>
+
+    <link rel="shortcut icon" href="https://limesurvey.entra.uni-bamberg.de/upload/themes/survey/ENTRA_v33_CAWI/files/favicon.png">
+    <script type="text/javascript">
+        if(window.basicThemeScripts === undefined){ 
+            window.basicThemeScripts = new ThemeScripts(); 
+        } 
+    </script>
+                <script type="text/javascript">
+            var ajaxHandler = new AjaxSubmitObject();
+            $(document).on('ready', function () {
+                ajaxHandler.bindActions();
+            });
+        </script>
+    
+    
+    <style>
+        body .top-container {
+            margin-top: 70px;
+        }
+    </style>
+
+
+    
+</head>
+
+        <body style="padding-top: 90px;" class=" ENTRA_v33_CAWI ENTRA_v32 vanilla font-noto lang-tr  brand-logo" cz-shortcut-listen="true">
+                                            <script>
+    $.ajaxSetup({
+        beforeSend:function(){
+            // show gif here, eg:
+            $("#ajax-loading").show();
+        },
+        complete:function(){
+            // hide gif here, eg:
+            $("#ajax-loading").hide();
+        }
+    });
+</script>
+<div id="ajax-loading" hidden=""></div>
+                        
+        
+                            <div id="beginScripts" class="script-container">
+                <script type="text/javascript" src="../assets/decimal.js"></script>
+<script type="text/javascript" src="../assets/decimalcustom.js"></script>
+<script type="text/javascript" src="../assets/nojs.js"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+setJsVar();
+$.extend(LSvar.lang,{ "yes":"Evet","no":"Hay\u0131r" })
+var LEMmode='group';
+var LEMgseq=35;
+ExprMgr_process_relevance_and_tailoring = function(evt_type,sgqa,type){
+if (typeof LEM_initialized == 'undefined') {
+LEM_initialized=true;
+LEMsetTabIndexes();
+}
+if (evt_type == 'onchange' && (typeof last_sgqa !== 'undefined' && sgqa==last_sgqa) && (typeof last_evt_type !== 'undefined' && last_evt_type == 'TAB' && type != 'checkbox')) {
+  last_evt_type='onchange';
+  last_sgqa=sgqa;
+  return;
+}
+last_evt_type = evt_type;
+last_sgqa=sgqa;
+  relChange18669=false;
+  relChange18670=false;
+  relChange18671=false;
+  relChange18886=false;
+  relChange18887=false;
+  relChange18888=false;
+  relChange18862=false;
+  relChangeG35=false;
+  LEMrel18669(sgqa);
+  LEMrel18670(sgqa);
+  LEMrel18671(sgqa);
+  LEMrel18886(sgqa);
+  LEMrel18887(sgqa);
+  LEMrel18888(sgqa);
+  LEMrel18862(sgqa);
+
+}
+function LEMrel18669(sgqa){
+  var UsesVars = '  ';
+  if (typeof sgqa !== 'undefined' && !LEMregexMatch('/ java' + sgqa + ' /', UsesVars)) {
+  return;
+ }
+
+if (1)
+{
+  LEMval18669(sgqa);
+  relChange18669=true;
+  $('#relevance18669').val('1');
+}
+$('#relevance18669').val('1');  // always true
+}
+
+function LEMrel18670(sgqa){
+  var UsesVars = '  ';
+  if (typeof sgqa !== 'undefined' && !LEMregexMatch('/ java' + sgqa + ' /', UsesVars)) {
+  return;
+ }
+
+if (1)
+{
+  LEMval18670(sgqa);
+  relChange18670=true;
+  $('#relevance18670').val('1');
+}
+$('#relevance18670').val('1');  // always true
+}
+
+function LEMrel18671(sgqa){
+  var UsesVars = '  ';
+  if (typeof sgqa !== 'undefined' && !LEMregexMatch('/ java' + sgqa + ' /', UsesVars)) {
+  return;
+ }
+
+if (1)
+{
+  LEMval18671(sgqa);
+  relChange18671=true;
+  $('#relevance18671').val('1');
+}
+$('#relevance18671').val('1');  // always true
+}
+
+function LEMrel18886(sgqa){
+  var UsesVars = '  ';
+  if (typeof sgqa !== 'undefined' && !LEMregexMatch('/ java' + sgqa + ' /', UsesVars)) {
+  return;
+ }
+
+if (1)
+{
+  LEMval18886(sgqa);
+  relChange18886=true;
+  $('#relevance18886').val('1');
+}
+$('#relevance18886').val('1');  // always true
+}
+
+function LEMrel18887(sgqa){
+  var UsesVars = '  ';
+  if (typeof sgqa !== 'undefined' && !LEMregexMatch('/ java' + sgqa + ' /', UsesVars)) {
+  return;
+ }
+
+if (1)
+{
+  LEMval18887(sgqa);
+  relChange18887=true;
+  $('#relevance18887').val('1');
+}
+$('#relevance18887').val('1');  // always true
+}
+
+function LEMrel18888(sgqa){
+  var UsesVars = '  ';
+  if (typeof sgqa !== 'undefined' && !LEMregexMatch('/ java' + sgqa + ' /', UsesVars)) {
+  return;
+ }
+
+if (1)
+{
+  LEMval18888(sgqa);
+  relChange18888=true;
+  $('#relevance18888').val('1');
+}
+$('#relevance18888').val('1');  // always true
+}
+
+function LEMrel18862(sgqa){
+  var UsesVars = ' java330177X1345X18888 ';
+  if(relChange18888){
+    ;
+  }
+  else  if (typeof sgqa !== 'undefined' && !LEMregexMatch('/ java' + sgqa + ' /', UsesVars)) {
+  return;
+ }
+
+if ((LEMval('E4.NAOK')  > "1" && LEMval('E4.NAOK')  < "97"))
+{
+  LEMval18862(sgqa);
+  $('#question18862').trigger('relevance:on');
+  relChange18862=true;
+  $('#relevance18862').val('1');
+}
+else {
+  $('#question18862').trigger('relevance:off');
+  if ($('#relevance18862').val()=='1') { relChange18862=true; }
+  $('#relevance18862').val('0');
+}
+}
+function LEMval18669(sgqa){
+  isValidSum18669=true;
+  isValidOther18669=true;
+  isValidOtherComment18669=true;
+
+  if(((1))){
+    $('#vmsg_18669_default').trigger('classChangeGood');
+  }
+  else {
+    $('#vmsg_18669_default').trigger('classChangeError');
+    isValidOther18669=false;
+  }
+
+  if(isValidSum18669){
+    $('#totalvalue_18669').trigger('classChangeGood');
+  }
+  else {
+    $('#totalvalue_18669').trigger('classChangeError');
+  }
+
+  if(isValidOtherComment18669){
+    $('#answer330177X1345X18669text').addClass('em_sq_validation').trigger('classChangeGood');
+  }
+  else {
+    $('#answer330177X1345X18669text').addClass('em_sq_validation').trigger('classChangeError');
+  }
+}
+
+function LEMval18670(sgqa){
+  isValidSum18670=true;
+  isValidOther18670=true;
+  isValidOtherComment18670=true;
+
+  if(((1))){
+    $('#vmsg_18670_default').trigger('classChangeGood');
+  }
+  else {
+    $('#vmsg_18670_default').trigger('classChangeError');
+    isValidOther18670=false;
+  }
+
+  if(isValidSum18670){
+    $('#totalvalue_18670').trigger('classChangeGood');
+  }
+  else {
+    $('#totalvalue_18670').trigger('classChangeError');
+  }
+
+  if(isValidOtherComment18670){
+    $('#answer330177X1345X18670text').addClass('em_sq_validation').trigger('classChangeGood');
+  }
+  else {
+    $('#answer330177X1345X18670text').addClass('em_sq_validation').trigger('classChangeError');
+  }
+}
+
+function LEMval18671(sgqa){
+  isValidSum18671=true;
+  isValidOther18671=true;
+  isValidOtherComment18671=true;
+
+  if(((1))){
+    $('#vmsg_18671_default').trigger('classChangeGood');
+  }
+  else {
+    $('#vmsg_18671_default').trigger('classChangeError');
+    isValidOther18671=false;
+  }
+
+  if(isValidSum18671){
+    $('#totalvalue_18671').trigger('classChangeGood');
+  }
+  else {
+    $('#totalvalue_18671').trigger('classChangeError');
+  }
+
+  if(isValidOtherComment18671){
+    $('#answer330177X1345X18671text').addClass('em_sq_validation').trigger('classChangeGood');
+  }
+  else {
+    $('#answer330177X1345X18671text').addClass('em_sq_validation').trigger('classChangeError');
+  }
+}
+
+function LEMval18886(sgqa){
+  isValidSum18886=true;
+  isValidOther18886=true;
+  isValidOtherComment18886=true;
+
+  if(((1))){
+    $('#vmsg_18886_default').trigger('classChangeGood');
+  }
+  else {
+    $('#vmsg_18886_default').trigger('classChangeError');
+    isValidOther18886=false;
+  }
+
+  if(isValidSum18886){
+    $('#totalvalue_18886').trigger('classChangeGood');
+  }
+  else {
+    $('#totalvalue_18886').trigger('classChangeError');
+  }
+
+  if(isValidOtherComment18886){
+    $('#answer330177X1345X18886text').addClass('em_sq_validation').trigger('classChangeGood');
+  }
+  else {
+    $('#answer330177X1345X18886text').addClass('em_sq_validation').trigger('classChangeError');
+  }
+}
+
+function LEMval18887(sgqa){
+  isValidSum18887=true;
+  isValidOther18887=true;
+  isValidOtherComment18887=true;
+
+  if(((1))){
+    $('#vmsg_18887_default').trigger('classChangeGood');
+  }
+  else {
+    $('#vmsg_18887_default').trigger('classChangeError');
+    isValidOther18887=false;
+  }
+
+  if(isValidSum18887){
+    $('#totalvalue_18887').trigger('classChangeGood');
+  }
+  else {
+    $('#totalvalue_18887').trigger('classChangeError');
+  }
+
+  if(isValidOtherComment18887){
+    $('#answer330177X1345X18887text').addClass('em_sq_validation').trigger('classChangeGood');
+  }
+  else {
+    $('#answer330177X1345X18887text').addClass('em_sq_validation').trigger('classChangeError');
+  }
+}
+
+function LEMval18888(sgqa){
+  isValidSum18888=true;
+  isValidOther18888=true;
+  isValidOtherComment18888=true;
+
+  if(((1))){
+    $('#vmsg_18888_default').trigger('classChangeGood');
+  }
+  else {
+    $('#vmsg_18888_default').trigger('classChangeError');
+    isValidOther18888=false;
+  }
+
+  if(isValidSum18888){
+    $('#totalvalue_18888').trigger('classChangeGood');
+  }
+  else {
+    $('#totalvalue_18888').trigger('classChangeError');
+  }
+
+  if(isValidOtherComment18888){
+    $('#answer330177X1345X18888text').addClass('em_sq_validation').trigger('classChangeGood');
+  }
+  else {
+    $('#answer330177X1345X18888text').addClass('em_sq_validation').trigger('classChangeError');
+  }
+}
+
+function LEMval18862(sgqa){
+  isValidSum18862=true;
+  isValidOther18862=true;
+  isValidOtherComment18862=true;
+
+  if(((1))){
+    $('#vmsg_18862_default').trigger('classChangeGood');
+  }
+  else {
+    $('#vmsg_18862_default').trigger('classChangeError');
+    isValidOther18862=false;
+  }
+
+  if(isValidSum18862){
+    $('#totalvalue_18862').trigger('classChangeGood');
+  }
+  else {
+    $('#totalvalue_18862').trigger('classChangeError');
+  }
+
+  if(isValidOtherComment18862){
+    $('#answer330177X1345X18862text').addClass('em_sq_validation').trigger('classChangeGood');
+  }
+  else {
+    $('#answer330177X1345X18862text').addClass('em_sq_validation').trigger('classChangeError');
+  }
+}
+var LEMalias2varName = {
+'E4':'java330177X1345X18888',
+'330177X1345X18888':'java330177X1345X18888'};
+var LEMvarNameAttr = {
+'java330177X1345X18888':{ 'jsName':'java330177X1345X18888','jsName_on':'java330177X1345X18888','sgqa':'330177X1345X18888','qid':18888,'gid':1345,'type':'L','default':'','rowdivid':'','onlynum':'','gseq':35,'answers':{ '0~1':'0|0','0~2':'0|1 veya 2','0~3':'0|3 ile 6 arası','0~4':'0|7 ile 14 arası','0~5':'0|15 veya daha fazla','0~97':'0|Bilmiyorum','0~98':'0|Yanıt vermeyi reddediyorum'}}};
+
+/*]]>*/
+</script>
+
+            </div>
+               
+
+                <article>
+<div class="outerwrapper   container  " id="outerwrapper">
+
+            <div id="dynamicReloadContainer">
+            
+                                                    
+            <div class="header-wrapper row">
+                <div class="container">
+                                        <div class="logo-bar col-xs-12">
+                      <span class="navbar-logo-left col-xs-12 col-sm-4">
+                                                                      </span>
+                      <span class="navbar-logo-middle col-xs-12 col-sm-4">
+                                                                                <img class="logo-middle" title="Menu" src="../assets/04_entra_logo_hellblau_text.png" alt="31_ENTRA_MainSurvey_CAWI">
+                                              </span>
+                      <span class="navbar-logo-right col-xs-12 col-sm-4">
+                                                                      </span>
+                    </div>
+                <!-- Bootstrap Navigation Bar -->
+                                <div class="progress-wrapper col-xs-12">
+                
+    <!-- Top container -->
+    <div class=" ">
+            </div> <!-- must hide it without javascript -->
+
+                </div>
+                                </div>
+                
+                <div class="navbar-brand col-xs-12">
+                    <h1 class="surveyname">31_ENTRA_MainSurvey_CAWI</h1>
+                </div>
+            </div>
+                
+                <!-- Outer Frame Container -->
+                                                                            <!-- outer frame container -->
+<div class=" outerframe    container  " id="outerframeContainer">
+        
+<!-- Main Row -->
+<div id="main-row">
+    <!-- Main Col -->
+    <div class="  col-centered  space-col" id="main-col">
+
+        
+                        
+
+
+
+
+                                        
+
+
+<!-- Start of the main Form-->
+<form " autocomplete="off" class="survey-form-container form"  >
+<input type="hidden" value="STN1STdFVElBSGY0T20zcFRwd2xHSGtuXzFOYXkxZWSdo_T5p0g9V1_6bkfK_Bi9vO1uLRAwV6yJ9vumfrV5Ng==" name="YII_CSRF_TOKEN">
+
+<!-- Ajax value -->
+<!-- Needs to be set by javascript! Because if JavaScript is disabled, ajaxmode will completely fail! -->
+
+
+
+<!-- Field Names -->
+<input type="hidden" name="fieldnames" value="330177X1345X18669|330177X1345X18670|330177X1345X18671|330177X1345X18886|330177X1345X18887|330177X1345X18888|330177X1345X18862" id="fieldnames">
+
+<input type="hidden" name="thisstep" value="36" id="thisstep">
+<input type="hidden" name="sid" value="330177" id="sid">
+<input type="hidden" name="start_time" value="1566128420" id="start_time">
+<input type="hidden" name="LEMpostKey" value="1149106051" id="LEMpostKey">
+
+<input type="hidden" name="token" value="M99HB" id="token">
+
+
+<!-- Submit button -->
+<button  id="defaultbtn" value="default" name="move" class="submit hidden" style="display:none">varsayılan</button>
+ <!-- main form -->
+
+        <!-- emScriptsAndHiddenInputs updated -->
+<input type="hidden" id="relevance18669" name="relevance18669" value="1">
+<input type="hidden" id="relevance18670" name="relevance18670" value="1">
+<input type="hidden" id="relevance18671" name="relevance18671" value="1">
+<input type="hidden" id="relevance18886" name="relevance18886" value="1">
+<input type="hidden" id="relevance18887" name="relevance18887" value="1">
+<input type="hidden" id="relevance18888" name="relevance18888" value="1">
+<input type="hidden" id="relevance18862" name="relevance18862" value="0">
+<input type="hidden" id="relevanceG35" name="relevanceG35" value="1">
+<input type="hidden" id="aQuestionsWithDependencies" data-qids="[&quot;18888&quot;,&quot;18862&quot;]">
+
+        
+
+<!-- No JavaScript alert -->
+<div class=" ls-js-hidden warningjs  alert alert-danger " data-type="checkjavascript">
+    Dikkat: Tarayıcınızda JavaScript betiklerinin yürütülmesi devre dışı bırakılmış. Bu nedenle bu anketteki tüm soruları yanıtlayamayabilirsiniz. Lütfen tarayıcı ayarlarınızı denetleyin.
+</div>
+
+
+        
+
+
+                
+<!-- START OF GROUP: ARKADAŞLAR VE TEMASTA OLDUĞU KİŞİLER   -->
+<div id="group-35" class=" group-outer-container  space-col">
+
+        
+<div class=" group-container  space-col">
+
+        
+<!-- Group Name -->
+    <div class=" group-title   text-center h3 space-col">
+        ARKADAŞLAR VE TEMASTA OLDUĞU KİŞİLER
+    </div>
+
+
+        
+    
+
+    
+    <!-- PRESENT THE QUESTIONS -->
+             <!-- Question 18669  -->
+<div id="question18669" class="row list-radio mandatory   question-container  ">
+    
+
+
+    <!-- Question E1 -->
+
+        
+<!-- Question text -->
+<div class=" question-title-container   col-xs-12 ">
+
+    
+
+    <!-- Add a visual information + just Mandatory string for aria : can be improved -->
+    <div class=" asterisk    pull-left">
+        <small class="   text-danger fa fa-asterisk small" aria-hidden="true"></small>
+        <span class="   sr-only text-danger">
+            (Bu sorunun yanıtlanması zorunludur)
+        </span>
+    </div>
+
+
+
+<div class=" question-text ">
+    <div id="ls-question-text-330177X1345X18669" class=" ls-label-question ">
+        <u>Türkiye'den</u> olan insanlar ile hangi sıklıkta zaman geçiriyorsunuz?
+<div class="instructions"></div>
+<div class="instructions"></div>
+    </div>
+</div>
+
+    
+        
+<!-- LimeSurvey valid message and help -->
+<div class=" question-valid-container   text-info col-xs-12">
+               </div>
+
+    
+</div>
+
+
+        
+<!-- Answer -->
+<div class=" answer-container    col-xs-12">
+        
+<!-- List Radio -->
+
+<!-- answer -->
+
+
+<div class="ls-answers answers-list radio-list row" role="radiogroup" aria-labelledby="ls-question-text-330177X1345X18669">
+        <!-- on small screen, each column is full widht, so it look like a single colunm-->
+<ul class="list-unstyled col-sm-12 col-xs-12">
+
+<!-- answer_row -->
+<li id="javatbd330177X1345X186691" class="answer-item radio-item">
+    <input type="radio" value="1" name="330177X1345X18669" id="answer330177X1345X186691" onclick="if (document.getElementById(&#39;answer330177X1345X18669othertext&#39;) != null) document.getElementById(&#39;answer330177X1345X18669othertext&#39;).value=&#39;&#39;;checkconditions(this.value, this.name, this.type)">
+    <label for="answer330177X1345X186691" class="control-label radio-label">
+        Her gün
+    </label>
+</li>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<li id="javatbd330177X1345X186692" class="answer-item radio-item">
+    <input type="radio" value="2" name="330177X1345X18669" id="answer330177X1345X186692" onclick="if (document.getElementById(&#39;answer330177X1345X18669othertext&#39;) != null) document.getElementById(&#39;answer330177X1345X18669othertext&#39;).value=&#39;&#39;;checkconditions(this.value, this.name, this.type)">
+    <label for="answer330177X1345X186692" class="control-label radio-label">
+        Haftada birkaç kez 
+    </label>
+</li>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<li id="javatbd330177X1345X186693" class="answer-item radio-item">
+    <input type="radio" value="3" name="330177X1345X18669" id="answer330177X1345X186693" onclick="if (document.getElementById(&#39;answer330177X1345X18669othertext&#39;) != null) document.getElementById(&#39;answer330177X1345X18669othertext&#39;).value=&#39;&#39;;checkconditions(this.value, this.name, this.type)">
+    <label for="answer330177X1345X186693" class="control-label radio-label">
+        Ayda birkaç kez 
+    </label>
+</li>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<li id="javatbd330177X1345X186694" class="answer-item radio-item">
+    <input type="radio" value="4" name="330177X1345X18669" id="answer330177X1345X186694" onclick="if (document.getElementById(&#39;answer330177X1345X18669othertext&#39;) != null) document.getElementById(&#39;answer330177X1345X18669othertext&#39;).value=&#39;&#39;;checkconditions(this.value, this.name, this.type)">
+    <label for="answer330177X1345X186694" class="control-label radio-label">
+        Yılda birkaç kez 
+    </label>
+</li>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<li id="javatbd330177X1345X186695" class="answer-item radio-item">
+    <input type="radio" value="5" name="330177X1345X18669" id="answer330177X1345X186695" onclick="if (document.getElementById(&#39;answer330177X1345X18669othertext&#39;) != null) document.getElementById(&#39;answer330177X1345X18669othertext&#39;).value=&#39;&#39;;checkconditions(this.value, this.name, this.type)">
+    <label for="answer330177X1345X186695" class="control-label radio-label">
+        Daha seyrek
+    </label>
+</li>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<li id="javatbd330177X1345X186696" class="answer-item radio-item">
+    <input type="radio" value="6" name="330177X1345X18669" id="answer330177X1345X186696" onclick="if (document.getElementById(&#39;answer330177X1345X18669othertext&#39;) != null) document.getElementById(&#39;answer330177X1345X18669othertext&#39;).value=&#39;&#39;;checkconditions(this.value, this.name, this.type)">
+    <label for="answer330177X1345X186696" class="control-label radio-label">
+        Hiçbir zaman
+    </label>
+</li>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<li id="javatbd330177X1345X1866997" class="answer-item radio-item">
+    <input type="radio" value="97" name="330177X1345X18669" id="answer330177X1345X1866997" onclick="if (document.getElementById(&#39;answer330177X1345X18669othertext&#39;) != null) document.getElementById(&#39;answer330177X1345X18669othertext&#39;).value=&#39;&#39;;checkconditions(this.value, this.name, this.type)">
+    <label for="answer330177X1345X1866997" class="control-label radio-label">
+        Bilmiyorum
+    </label>
+</li>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<li id="javatbd330177X1345X1866998" class="answer-item radio-item">
+    <input type="radio" value="98" name="330177X1345X18669" id="answer330177X1345X1866998" onclick="if (document.getElementById(&#39;answer330177X1345X18669othertext&#39;) != null) document.getElementById(&#39;answer330177X1345X18669othertext&#39;).value=&#39;&#39;;checkconditions(this.value, this.name, this.type)">
+    <label for="answer330177X1345X1866998" class="control-label radio-label">
+        Yanıt vermeyi reddediyorum
+    </label>
+</li>
+<!-- end of answer_row -->
+</ul>
+
+</div>
+<input id="java330177X1345X18669" disabled="disabled" type="hidden" name="java330177X1345X18669">
+<!-- end of answer -->
+
+
+<!-- Survey question help -->
+<div class="question-help-container text-info col-xs-12 hidden">
+                
+    </div>
+
+</div>
+
+
+        
+
+    <!-- End of question E1 -->
+
+</div>
+<!-- End of question  18669  -->
+
+             <!-- Question 18670  -->
+<div id="question18670" class="row list-radio mandatory   question-container  ">
+    
+
+
+    <!-- Question E2 -->
+
+        
+<!-- Question text -->
+<div class=" question-title-container   col-xs-12 ">
+
+    
+
+    <!-- Add a visual information + just Mandatory string for aria : can be improved -->
+    <div class=" asterisk    pull-left">
+        <small class="   text-danger fa fa-asterisk small" aria-hidden="true"></small>
+        <span class="   sr-only text-danger">
+            (Bu sorunun yanıtlanması zorunludur)
+        </span>
+    </div>
+
+
+
+<div class=" question-text ">
+    <div id="ls-question-text-330177X1345X18670" class=" ls-label-question ">
+        <u>Almanlar</u> ile hangi sıklıkta zaman geçiriyorsunuz?
+<div class="instructions"></div>
+<div class="instructions"></div>
+    </div>
+</div>
+
+    
+        
+<!-- LimeSurvey valid message and help -->
+<div class=" question-valid-container   text-info col-xs-12">
+               </div>
+
+    
+</div>
+
+
+        
+<!-- Answer -->
+<div class=" answer-container    col-xs-12">
+        
+<!-- List Radio -->
+
+<!-- answer -->
+
+
+<div class="ls-answers answers-list radio-list row" role="radiogroup" aria-labelledby="ls-question-text-330177X1345X18670">
+        <!-- on small screen, each column is full widht, so it look like a single colunm-->
+<ul class="list-unstyled col-sm-12 col-xs-12">
+
+<!-- answer_row -->
+<li id="javatbd330177X1345X186701" class="answer-item radio-item">
+    <input type="radio" value="1" name="330177X1345X18670" id="answer330177X1345X186701" onclick="if (document.getElementById(&#39;answer330177X1345X18670othertext&#39;) != null) document.getElementById(&#39;answer330177X1345X18670othertext&#39;).value=&#39;&#39;;checkconditions(this.value, this.name, this.type)">
+    <label for="answer330177X1345X186701" class="control-label radio-label">
+        Her gün
+    </label>
+</li>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<li id="javatbd330177X1345X186702" class="answer-item radio-item">
+    <input type="radio" value="2" name="330177X1345X18670" id="answer330177X1345X186702" onclick="if (document.getElementById(&#39;answer330177X1345X18670othertext&#39;) != null) document.getElementById(&#39;answer330177X1345X18670othertext&#39;).value=&#39;&#39;;checkconditions(this.value, this.name, this.type)">
+    <label for="answer330177X1345X186702" class="control-label radio-label">
+        Haftada birkaç kez 
+    </label>
+</li>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<li id="javatbd330177X1345X186703" class="answer-item radio-item">
+    <input type="radio" value="3" name="330177X1345X18670" id="answer330177X1345X186703" onclick="if (document.getElementById(&#39;answer330177X1345X18670othertext&#39;) != null) document.getElementById(&#39;answer330177X1345X18670othertext&#39;).value=&#39;&#39;;checkconditions(this.value, this.name, this.type)">
+    <label for="answer330177X1345X186703" class="control-label radio-label">
+        Ayda birkaç kez 
+    </label>
+</li>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<li id="javatbd330177X1345X186704" class="answer-item radio-item">
+    <input type="radio" value="4" name="330177X1345X18670" id="answer330177X1345X186704" onclick="if (document.getElementById(&#39;answer330177X1345X18670othertext&#39;) != null) document.getElementById(&#39;answer330177X1345X18670othertext&#39;).value=&#39;&#39;;checkconditions(this.value, this.name, this.type)">
+    <label for="answer330177X1345X186704" class="control-label radio-label">
+        Yılda birkaç kez 
+    </label>
+</li>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<li id="javatbd330177X1345X186705" class="answer-item radio-item">
+    <input type="radio" value="5" name="330177X1345X18670" id="answer330177X1345X186705" onclick="if (document.getElementById(&#39;answer330177X1345X18670othertext&#39;) != null) document.getElementById(&#39;answer330177X1345X18670othertext&#39;).value=&#39;&#39;;checkconditions(this.value, this.name, this.type)">
+    <label for="answer330177X1345X186705" class="control-label radio-label">
+        Daha seyrek
+    </label>
+</li>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<li id="javatbd330177X1345X186706" class="answer-item radio-item">
+    <input type="radio" value="6" name="330177X1345X18670" id="answer330177X1345X186706" onclick="if (document.getElementById(&#39;answer330177X1345X18670othertext&#39;) != null) document.getElementById(&#39;answer330177X1345X18670othertext&#39;).value=&#39;&#39;;checkconditions(this.value, this.name, this.type)">
+    <label for="answer330177X1345X186706" class="control-label radio-label">
+        Hiçbir zaman
+    </label>
+</li>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<li id="javatbd330177X1345X1867097" class="answer-item radio-item">
+    <input type="radio" value="97" name="330177X1345X18670" id="answer330177X1345X1867097" onclick="if (document.getElementById(&#39;answer330177X1345X18670othertext&#39;) != null) document.getElementById(&#39;answer330177X1345X18670othertext&#39;).value=&#39;&#39;;checkconditions(this.value, this.name, this.type)">
+    <label for="answer330177X1345X1867097" class="control-label radio-label">
+        Bilmiyorum
+    </label>
+</li>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<li id="javatbd330177X1345X1867098" class="answer-item radio-item">
+    <input type="radio" value="98" name="330177X1345X18670" id="answer330177X1345X1867098" onclick="if (document.getElementById(&#39;answer330177X1345X18670othertext&#39;) != null) document.getElementById(&#39;answer330177X1345X18670othertext&#39;).value=&#39;&#39;;checkconditions(this.value, this.name, this.type)">
+    <label for="answer330177X1345X1867098" class="control-label radio-label">
+        Yanıt vermeyi reddediyorum
+    </label>
+</li>
+<!-- end of answer_row -->
+</ul>
+
+</div>
+<input id="java330177X1345X18670" disabled="disabled" type="hidden" name="java330177X1345X18670">
+<!-- end of answer -->
+
+
+<!-- Survey question help -->
+<div class="question-help-container text-info col-xs-12 hidden">
+                
+    </div>
+
+</div>
+
+
+        
+
+    <!-- End of question E2 -->
+
+</div>
+<!-- End of question  18670  -->
+
+             <!-- Question 18671  -->
+<div id="question18671" class="row list-radio mandatory   question-container  ">
+    
+
+
+    <!-- Question E3 -->
+
+        
+<!-- Question text -->
+<div class=" question-title-container   col-xs-12 ">
+
+    
+
+    <!-- Add a visual information + just Mandatory string for aria : can be improved -->
+    <div class=" asterisk    pull-left">
+        <small class="   text-danger fa fa-asterisk small" aria-hidden="true"></small>
+        <span class="   sr-only text-danger">
+            (Bu sorunun yanıtlanması zorunludur)
+        </span>
+    </div>
+
+
+
+<div class=" question-text ">
+    <div id="ls-question-text-330177X1345X18671" class=" ls-label-question ">
+        <p>Ne Türkiye'dan ne de Almanya'dan olmayan insanlarla ne sıklıkla zaman geçiriyorsunuz?</p>
+
+<div class="instructions"></div>
+
+<div class="instructions"></div>
+
+    </div>
+</div>
+
+    
+        
+<!-- LimeSurvey valid message and help -->
+<div class=" question-valid-container   text-info col-xs-12">
+               </div>
+
+    
+</div>
+
+
+        
+<!-- Answer -->
+<div class=" answer-container    col-xs-12">
+        
+<!-- List Radio -->
+
+<!-- answer -->
+
+
+<div class="ls-answers answers-list radio-list row" role="radiogroup" aria-labelledby="ls-question-text-330177X1345X18671">
+        <!-- on small screen, each column is full widht, so it look like a single colunm-->
+<ul class="list-unstyled col-sm-12 col-xs-12">
+
+<!-- answer_row -->
+<li id="javatbd330177X1345X186711" class="answer-item radio-item">
+    <input type="radio" value="1" name="330177X1345X18671" id="answer330177X1345X186711" onclick="if (document.getElementById(&#39;answer330177X1345X18671othertext&#39;) != null) document.getElementById(&#39;answer330177X1345X18671othertext&#39;).value=&#39;&#39;;checkconditions(this.value, this.name, this.type)">
+    <label for="answer330177X1345X186711" class="control-label radio-label">
+        Her gün
+    </label>
+</li>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<li id="javatbd330177X1345X186712" class="answer-item radio-item">
+    <input type="radio" value="2" name="330177X1345X18671" id="answer330177X1345X186712" onclick="if (document.getElementById(&#39;answer330177X1345X18671othertext&#39;) != null) document.getElementById(&#39;answer330177X1345X18671othertext&#39;).value=&#39;&#39;;checkconditions(this.value, this.name, this.type)">
+    <label for="answer330177X1345X186712" class="control-label radio-label">
+        Haftada birkaç kez 
+    </label>
+</li>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<li id="javatbd330177X1345X186713" class="answer-item radio-item">
+    <input type="radio" value="3" name="330177X1345X18671" id="answer330177X1345X186713" onclick="if (document.getElementById(&#39;answer330177X1345X18671othertext&#39;) != null) document.getElementById(&#39;answer330177X1345X18671othertext&#39;).value=&#39;&#39;;checkconditions(this.value, this.name, this.type)">
+    <label for="answer330177X1345X186713" class="control-label radio-label">
+        Ayda birkaç kez 
+    </label>
+</li>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<li id="javatbd330177X1345X186714" class="answer-item radio-item">
+    <input type="radio" value="4" name="330177X1345X18671" id="answer330177X1345X186714" onclick="if (document.getElementById(&#39;answer330177X1345X18671othertext&#39;) != null) document.getElementById(&#39;answer330177X1345X18671othertext&#39;).value=&#39;&#39;;checkconditions(this.value, this.name, this.type)">
+    <label for="answer330177X1345X186714" class="control-label radio-label">
+        Yılda birkaç kez 
+    </label>
+</li>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<li id="javatbd330177X1345X186715" class="answer-item radio-item">
+    <input type="radio" value="5" name="330177X1345X18671" id="answer330177X1345X186715" onclick="if (document.getElementById(&#39;answer330177X1345X18671othertext&#39;) != null) document.getElementById(&#39;answer330177X1345X18671othertext&#39;).value=&#39;&#39;;checkconditions(this.value, this.name, this.type)">
+    <label for="answer330177X1345X186715" class="control-label radio-label">
+        Daha seyrek
+    </label>
+</li>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<li id="javatbd330177X1345X186716" class="answer-item radio-item">
+    <input type="radio" value="6" name="330177X1345X18671" id="answer330177X1345X186716" onclick="if (document.getElementById(&#39;answer330177X1345X18671othertext&#39;) != null) document.getElementById(&#39;answer330177X1345X18671othertext&#39;).value=&#39;&#39;;checkconditions(this.value, this.name, this.type)">
+    <label for="answer330177X1345X186716" class="control-label radio-label">
+        Hiçbir zaman
+    </label>
+</li>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<li id="javatbd330177X1345X1867197" class="answer-item radio-item">
+    <input type="radio" value="97" name="330177X1345X18671" id="answer330177X1345X1867197" onclick="if (document.getElementById(&#39;answer330177X1345X18671othertext&#39;) != null) document.getElementById(&#39;answer330177X1345X18671othertext&#39;).value=&#39;&#39;;checkconditions(this.value, this.name, this.type)">
+    <label for="answer330177X1345X1867197" class="control-label radio-label">
+        Bilmiyorum
+    </label>
+</li>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<li id="javatbd330177X1345X1867198" class="answer-item radio-item">
+    <input type="radio" value="98" name="330177X1345X18671" id="answer330177X1345X1867198" onclick="if (document.getElementById(&#39;answer330177X1345X18671othertext&#39;) != null) document.getElementById(&#39;answer330177X1345X18671othertext&#39;).value=&#39;&#39;;checkconditions(this.value, this.name, this.type)">
+    <label for="answer330177X1345X1867198" class="control-label radio-label">
+        Yanıt vermeyi reddediyorum
+    </label>
+</li>
+<!-- end of answer_row -->
+</ul>
+
+</div>
+<input id="java330177X1345X18671" disabled="disabled" type="hidden" name="java330177X1345X18671">
+<!-- end of answer -->
+
+
+<!-- Survey question help -->
+<div class="question-help-container text-info col-xs-12 hidden">
+                
+    </div>
+
+</div>
+
+
+        
+
+    <!-- End of question E3 -->
+
+</div>
+<!-- End of question  18671  -->
+
+             <!-- Question 18886  -->
+<div id="question18886" class="row list-radio mandatory   question-container  ">
+    
+
+
+    <!-- Question E23 -->
+
+        
+<!-- Question text -->
+<div class=" question-title-container   col-xs-12 ">
+
+    
+
+    <!-- Add a visual information + just Mandatory string for aria : can be improved -->
+    <div class=" asterisk    pull-left">
+        <small class="   text-danger fa fa-asterisk small" aria-hidden="true"></small>
+        <span class="   sr-only text-danger">
+            (Bu sorunun yanıtlanması zorunludur)
+        </span>
+    </div>
+
+
+
+<div class=" question-text ">
+    <div id="ls-question-text-330177X1345X18886" class=" ls-label-question ">
+        <p>Son 12 ay içersinde, ailenizden olmayan almanlar ile ne sıklıkta akşam yemeği yediniz?</p>
+
+<div class="instructions"></div>
+
+    </div>
+</div>
+
+    
+        
+<!-- LimeSurvey valid message and help -->
+<div class=" question-valid-container   text-info col-xs-12">
+               </div>
+
+    
+</div>
+
+
+        
+<!-- Answer -->
+<div class=" answer-container    col-xs-12">
+        
+<!-- List Radio -->
+
+<!-- answer -->
+
+
+<div class="ls-answers answers-list radio-list row" role="radiogroup" aria-labelledby="ls-question-text-330177X1345X18886">
+        <!-- on small screen, each column is full widht, so it look like a single colunm-->
+<ul class="list-unstyled col-sm-12 col-xs-12">
+
+<!-- answer_row -->
+<li id="javatbd330177X1345X188861" class="answer-item radio-item">
+    <input type="radio" value="1" name="330177X1345X18886" id="answer330177X1345X188861" onclick="if (document.getElementById(&#39;answer330177X1345X18886othertext&#39;) != null) document.getElementById(&#39;answer330177X1345X18886othertext&#39;).value=&#39;&#39;;checkconditions(this.value, this.name, this.type)">
+    <label for="answer330177X1345X188861" class="control-label radio-label">
+        Neredeyse her gün
+    </label>
+</li>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<li id="javatbd330177X1345X188862" class="answer-item radio-item">
+    <input type="radio" value="2" name="330177X1345X18886" id="answer330177X1345X188862" onclick="if (document.getElementById(&#39;answer330177X1345X18886othertext&#39;) != null) document.getElementById(&#39;answer330177X1345X18886othertext&#39;).value=&#39;&#39;;checkconditions(this.value, this.name, this.type)">
+    <label for="answer330177X1345X188862" class="control-label radio-label">
+        Haftada bir
+    </label>
+</li>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<li id="javatbd330177X1345X188863" class="answer-item radio-item">
+    <input type="radio" value="3" name="330177X1345X18886" id="answer330177X1345X188863" onclick="if (document.getElementById(&#39;answer330177X1345X18886othertext&#39;) != null) document.getElementById(&#39;answer330177X1345X18886othertext&#39;).value=&#39;&#39;;checkconditions(this.value, this.name, this.type)">
+    <label for="answer330177X1345X188863" class="control-label radio-label">
+        Ayda bir
+    </label>
+</li>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<li id="javatbd330177X1345X188864" class="answer-item radio-item">
+    <input type="radio" value="4" name="330177X1345X18886" id="answer330177X1345X188864" onclick="if (document.getElementById(&#39;answer330177X1345X18886othertext&#39;) != null) document.getElementById(&#39;answer330177X1345X18886othertext&#39;).value=&#39;&#39;;checkconditions(this.value, this.name, this.type)">
+    <label for="answer330177X1345X188864" class="control-label radio-label">
+        Yılda bir
+    </label>
+</li>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<li id="javatbd330177X1345X188865" class="answer-item radio-item">
+    <input type="radio" value="5" name="330177X1345X18886" id="answer330177X1345X188865" onclick="if (document.getElementById(&#39;answer330177X1345X18886othertext&#39;) != null) document.getElementById(&#39;answer330177X1345X18886othertext&#39;).value=&#39;&#39;;checkconditions(this.value, this.name, this.type)">
+    <label for="answer330177X1345X188865" class="control-label radio-label">
+        Hiçbir zaman
+    </label>
+</li>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<li id="javatbd330177X1345X1888697" class="answer-item radio-item">
+    <input type="radio" value="97" name="330177X1345X18886" id="answer330177X1345X1888697" onclick="if (document.getElementById(&#39;answer330177X1345X18886othertext&#39;) != null) document.getElementById(&#39;answer330177X1345X18886othertext&#39;).value=&#39;&#39;;checkconditions(this.value, this.name, this.type)">
+    <label for="answer330177X1345X1888697" class="control-label radio-label">
+        Bilmiyorum
+    </label>
+</li>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<li id="javatbd330177X1345X1888698" class="answer-item radio-item">
+    <input type="radio" value="98" name="330177X1345X18886" id="answer330177X1345X1888698" onclick="if (document.getElementById(&#39;answer330177X1345X18886othertext&#39;) != null) document.getElementById(&#39;answer330177X1345X18886othertext&#39;).value=&#39;&#39;;checkconditions(this.value, this.name, this.type)">
+    <label for="answer330177X1345X1888698" class="control-label radio-label">
+        Yanıt vermeyi reddediyorum
+    </label>
+</li>
+<!-- end of answer_row -->
+</ul>
+
+</div>
+<input id="java330177X1345X18886" disabled="disabled" type="hidden" name="java330177X1345X18886">
+<!-- end of answer -->
+
+
+<!-- Survey question help -->
+<div class="question-help-container text-info col-xs-12 hidden">
+                
+    </div>
+
+</div>
+
+
+        
+
+    <!-- End of question E23 -->
+
+</div>
+<!-- End of question  18886  -->
+
+             <!-- Question 18887  -->
+<div id="question18887" class="row list-radio mandatory   question-container  ">
+    
+
+
+    <!-- Question E24 -->
+
+        
+<!-- Question text -->
+<div class=" question-title-container   col-xs-12 ">
+
+    
+
+    <!-- Add a visual information + just Mandatory string for aria : can be improved -->
+    <div class=" asterisk    pull-left">
+        <small class="   text-danger fa fa-asterisk small" aria-hidden="true"></small>
+        <span class="   sr-only text-danger">
+            (Bu sorunun yanıtlanması zorunludur)
+        </span>
+    </div>
+
+
+
+<div class=" question-text ">
+    <div id="ls-question-text-330177X1345X18887" class=" ls-label-question ">
+        <p>Lütfen adres defterinizde veya telefon rehberinizdeki Alman kişileri düşününüz.&nbsp; Son 4 hafta içerisinde onlardan kaçıyla irtibata geçtiniz - telefon, whatsapp, mesajlaşma?</p>
+
+    </div>
+</div>
+
+    
+        
+<!-- LimeSurvey valid message and help -->
+<div class=" question-valid-container   text-info col-xs-12">
+               </div>
+
+    
+</div>
+
+
+        
+<!-- Answer -->
+<div class=" answer-container    col-xs-12">
+        
+<!-- List Radio -->
+
+<!-- answer -->
+
+
+<div class="ls-answers answers-list radio-list row" role="radiogroup" aria-labelledby="ls-question-text-330177X1345X18887">
+        <!-- on small screen, each column is full widht, so it look like a single colunm-->
+<ul class="list-unstyled col-sm-12 col-xs-12">
+
+<!-- answer_row -->
+<li id="javatbd330177X1345X188871" class="answer-item radio-item">
+    <input type="radio" value="1" name="330177X1345X18887" id="answer330177X1345X188871" onclick="if (document.getElementById(&#39;answer330177X1345X18887othertext&#39;) != null) document.getElementById(&#39;answer330177X1345X18887othertext&#39;).value=&#39;&#39;;checkconditions(this.value, this.name, this.type)">
+    <label for="answer330177X1345X188871" class="control-label radio-label">
+        0
+    </label>
+</li>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<li id="javatbd330177X1345X188872" class="answer-item radio-item">
+    <input type="radio" value="2" name="330177X1345X18887" id="answer330177X1345X188872" onclick="if (document.getElementById(&#39;answer330177X1345X18887othertext&#39;) != null) document.getElementById(&#39;answer330177X1345X18887othertext&#39;).value=&#39;&#39;;checkconditions(this.value, this.name, this.type)">
+    <label for="answer330177X1345X188872" class="control-label radio-label">
+        1 veya 2
+    </label>
+</li>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<li id="javatbd330177X1345X188873" class="answer-item radio-item">
+    <input type="radio" value="3" name="330177X1345X18887" id="answer330177X1345X188873" onclick="if (document.getElementById(&#39;answer330177X1345X18887othertext&#39;) != null) document.getElementById(&#39;answer330177X1345X18887othertext&#39;).value=&#39;&#39;;checkconditions(this.value, this.name, this.type)">
+    <label for="answer330177X1345X188873" class="control-label radio-label">
+        3 ile 6 arası
+    </label>
+</li>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<li id="javatbd330177X1345X188874" class="answer-item radio-item">
+    <input type="radio" value="4" name="330177X1345X18887" id="answer330177X1345X188874" onclick="if (document.getElementById(&#39;answer330177X1345X18887othertext&#39;) != null) document.getElementById(&#39;answer330177X1345X18887othertext&#39;).value=&#39;&#39;;checkconditions(this.value, this.name, this.type)">
+    <label for="answer330177X1345X188874" class="control-label radio-label">
+        7 ile 14 arası
+    </label>
+</li>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<li id="javatbd330177X1345X188875" class="answer-item radio-item">
+    <input type="radio" value="5" name="330177X1345X18887" id="answer330177X1345X188875" onclick="if (document.getElementById(&#39;answer330177X1345X18887othertext&#39;) != null) document.getElementById(&#39;answer330177X1345X18887othertext&#39;).value=&#39;&#39;;checkconditions(this.value, this.name, this.type)">
+    <label for="answer330177X1345X188875" class="control-label radio-label">
+        15 veya daha fazla
+    </label>
+</li>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<li id="javatbd330177X1345X1888797" class="answer-item radio-item">
+    <input type="radio" value="97" name="330177X1345X18887" id="answer330177X1345X1888797" onclick="if (document.getElementById(&#39;answer330177X1345X18887othertext&#39;) != null) document.getElementById(&#39;answer330177X1345X18887othertext&#39;).value=&#39;&#39;;checkconditions(this.value, this.name, this.type)">
+    <label for="answer330177X1345X1888797" class="control-label radio-label">
+        Bilmiyorum
+    </label>
+</li>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<li id="javatbd330177X1345X1888798" class="answer-item radio-item">
+    <input type="radio" value="98" name="330177X1345X18887" id="answer330177X1345X1888798" onclick="if (document.getElementById(&#39;answer330177X1345X18887othertext&#39;) != null) document.getElementById(&#39;answer330177X1345X18887othertext&#39;).value=&#39;&#39;;checkconditions(this.value, this.name, this.type)">
+    <label for="answer330177X1345X1888798" class="control-label radio-label">
+        Yanıt vermeyi reddediyorum
+    </label>
+</li>
+<!-- end of answer_row -->
+</ul>
+
+</div>
+<input id="java330177X1345X18887" disabled="disabled" type="hidden" name="java330177X1345X18887">
+<!-- end of answer -->
+
+
+<!-- Survey question help -->
+<div class="question-help-container text-info col-xs-12 hidden">
+                
+    </div>
+
+</div>
+
+
+        
+
+    <!-- End of question E24 -->
+
+</div>
+<!-- End of question  18887  -->
+
+             <!-- Question 18888  -->
+<div id="question18888" class="row list-radio mandatory   question-container  ">
+    
+
+
+    <!-- Question E4 -->
+
+        
+<!-- Question text -->
+<div class=" question-title-container   col-xs-12 ">
+
+    
+
+    <!-- Add a visual information + just Mandatory string for aria : can be improved -->
+    <div class=" asterisk    pull-left">
+        <small class="   text-danger fa fa-asterisk small" aria-hidden="true"></small>
+        <span class="   sr-only text-danger">
+            (Bu sorunun yanıtlanması zorunludur)
+        </span>
+    </div>
+
+
+
+<div class=" question-text ">
+    <div id="ls-question-text-330177X1345X18888" class=" ls-label-question ">
+        <p>Yine bu son 4 hafta içerisinde Almanya <u>dışında olan</u> kaç kişiyle irtibat kurdunuz - telefon,whatsapp,mesajlaşma?</p>
+
+    </div>
+</div>
+
+    
+        
+<!-- LimeSurvey valid message and help -->
+<div class=" question-valid-container   text-info col-xs-12">
+               </div>
+
+    
+</div>
+
+
+        
+<!-- Answer -->
+<div class=" answer-container    col-xs-12">
+        
+<!-- List Radio -->
+
+<!-- answer -->
+
+
+<div class="ls-answers answers-list radio-list row" role="radiogroup" aria-labelledby="ls-question-text-330177X1345X18888">
+        <!-- on small screen, each column is full widht, so it look like a single colunm-->
+<ul class="list-unstyled col-sm-12 col-xs-12">
+
+<!-- answer_row -->
+<li id="javatbd330177X1345X188881" class="answer-item radio-item">
+    <input type="radio" value="1" name="330177X1345X18888" id="answer330177X1345X188881" onclick="if (document.getElementById(&#39;answer330177X1345X18888othertext&#39;) != null) document.getElementById(&#39;answer330177X1345X18888othertext&#39;).value=&#39;&#39;;checkconditions(this.value, this.name, this.type)">
+    <label for="answer330177X1345X188881" class="control-label radio-label">
+        0
+    </label>
+</li>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<li id="javatbd330177X1345X188882" class="answer-item radio-item">
+    <input type="radio" value="2" name="330177X1345X18888" id="answer330177X1345X188882" onclick="if (document.getElementById(&#39;answer330177X1345X18888othertext&#39;) != null) document.getElementById(&#39;answer330177X1345X18888othertext&#39;).value=&#39;&#39;;checkconditions(this.value, this.name, this.type)">
+    <label for="answer330177X1345X188882" class="control-label radio-label">
+        1 veya 2
+    </label>
+</li>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<li id="javatbd330177X1345X188883" class="answer-item radio-item">
+    <input type="radio" value="3" name="330177X1345X18888" id="answer330177X1345X188883" onclick="if (document.getElementById(&#39;answer330177X1345X18888othertext&#39;) != null) document.getElementById(&#39;answer330177X1345X18888othertext&#39;).value=&#39;&#39;;checkconditions(this.value, this.name, this.type)">
+    <label for="answer330177X1345X188883" class="control-label radio-label">
+        3 ile 6 arası
+    </label>
+</li>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<li id="javatbd330177X1345X188884" class="answer-item radio-item">
+    <input type="radio" value="4" name="330177X1345X18888" id="answer330177X1345X188884" onclick="if (document.getElementById(&#39;answer330177X1345X18888othertext&#39;) != null) document.getElementById(&#39;answer330177X1345X18888othertext&#39;).value=&#39;&#39;;checkconditions(this.value, this.name, this.type)">
+    <label for="answer330177X1345X188884" class="control-label radio-label">
+        7 ile 14 arası
+    </label>
+</li>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<li id="javatbd330177X1345X188885" class="answer-item radio-item">
+    <input type="radio" value="5" name="330177X1345X18888" id="answer330177X1345X188885" onclick="if (document.getElementById(&#39;answer330177X1345X18888othertext&#39;) != null) document.getElementById(&#39;answer330177X1345X18888othertext&#39;).value=&#39;&#39;;checkconditions(this.value, this.name, this.type)">
+    <label for="answer330177X1345X188885" class="control-label radio-label">
+        15 veya daha fazla
+    </label>
+</li>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<li id="javatbd330177X1345X1888897" class="answer-item radio-item">
+    <input type="radio" value="97" name="330177X1345X18888" id="answer330177X1345X1888897" onclick="if (document.getElementById(&#39;answer330177X1345X18888othertext&#39;) != null) document.getElementById(&#39;answer330177X1345X18888othertext&#39;).value=&#39;&#39;;checkconditions(this.value, this.name, this.type)">
+    <label for="answer330177X1345X1888897" class="control-label radio-label">
+        Bilmiyorum
+    </label>
+</li>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<li id="javatbd330177X1345X1888898" class="answer-item radio-item">
+    <input type="radio" value="98" name="330177X1345X18888" id="answer330177X1345X1888898" onclick="if (document.getElementById(&#39;answer330177X1345X18888othertext&#39;) != null) document.getElementById(&#39;answer330177X1345X18888othertext&#39;).value=&#39;&#39;;checkconditions(this.value, this.name, this.type)">
+    <label for="answer330177X1345X1888898" class="control-label radio-label">
+        Yanıt vermeyi reddediyorum
+    </label>
+</li>
+<!-- end of answer_row -->
+</ul>
+
+</div>
+<input id="java330177X1345X18888" disabled="disabled" type="hidden" name="java330177X1345X18888">
+<!-- end of answer -->
+
+
+<!-- Survey question help -->
+<div class="question-help-container text-info col-xs-12 hidden">
+                
+    </div>
+
+</div>
+
+
+        
+
+    <!-- End of question E4 -->
+
+</div>
+<!-- End of question  18888  -->
+
+             <!-- Question 18862  -->
+<div id="question18862" class="row list-radio ls-irrelevant ls-hidden mandatory question-container">
+    
+
+
+    <!-- Question E22 -->
+
+        
+<!-- Question text -->
+<div class=" question-title-container   col-xs-12 ">
+
+    
+
+    <!-- Add a visual information + just Mandatory string for aria : can be improved -->
+    <div class=" asterisk    pull-left">
+        <small class="   text-danger fa fa-asterisk small" aria-hidden="true"></small>
+        <span class="   sr-only text-danger">
+            (Bu sorunun yanıtlanması zorunludur)
+        </span>
+    </div>
+
+
+
+<div class=" question-text ">
+    <div id="ls-question-text-330177X1345X18862" class=" ls-label-question ">
+        <p>Bu insanların çoğu nerede yaşıyor?</p>
+
+<div class="instructions"></div>
+
+    </div>
+</div>
+
+    
+        
+<!-- LimeSurvey valid message and help -->
+<div class=" question-valid-container   text-info col-xs-12">
+               </div>
+
+    
+</div>
+
+
+        
+<!-- Answer -->
+<div class=" answer-container    col-xs-12">
+        
+<!-- List Radio -->
+
+<!-- answer -->
+
+
+<div class="ls-answers answers-list radio-list row" role="radiogroup" aria-labelledby="ls-question-text-330177X1345X18862">
+        <!-- on small screen, each column is full widht, so it look like a single colunm-->
+<ul class="list-unstyled col-sm-12 col-xs-12">
+
+<!-- answer_row -->
+<li id="javatbd330177X1345X188621" class="answer-item radio-item">
+    <input type="radio" value="1" name="330177X1345X18862" id="answer330177X1345X188621" onclick="if (document.getElementById(&#39;answer330177X1345X18862othertext&#39;) != null) document.getElementById(&#39;answer330177X1345X18862othertext&#39;).value=&#39;&#39;;checkconditions(this.value, this.name, this.type)">
+    <label for="answer330177X1345X188621" class="control-label radio-label">
+        Onların hepsi Türkiye’de yaşıyor
+    </label>
+</li>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<li id="javatbd330177X1345X188622" class="answer-item radio-item">
+    <input type="radio" value="2" name="330177X1345X18862" id="answer330177X1345X188622" onclick="if (document.getElementById(&#39;answer330177X1345X18862othertext&#39;) != null) document.getElementById(&#39;answer330177X1345X18862othertext&#39;).value=&#39;&#39;;checkconditions(this.value, this.name, this.type)">
+    <label for="answer330177X1345X188622" class="control-label radio-label">
+        Onların çoğu Türkiye’de yaşıyor
+    </label>
+</li>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<li id="javatbd330177X1345X188623" class="answer-item radio-item">
+    <input type="radio" value="3" name="330177X1345X18862" id="answer330177X1345X188623" onclick="if (document.getElementById(&#39;answer330177X1345X18862othertext&#39;) != null) document.getElementById(&#39;answer330177X1345X18862othertext&#39;).value=&#39;&#39;;checkconditions(this.value, this.name, this.type)">
+    <label for="answer330177X1345X188623" class="control-label radio-label">
+        Onların bazıları Türkiye’de yaşıyor
+    </label>
+</li>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<li id="javatbd330177X1345X188624" class="answer-item radio-item">
+    <input type="radio" value="4" name="330177X1345X18862" id="answer330177X1345X188624" onclick="if (document.getElementById(&#39;answer330177X1345X18862othertext&#39;) != null) document.getElementById(&#39;answer330177X1345X18862othertext&#39;).value=&#39;&#39;;checkconditions(this.value, this.name, this.type)">
+    <label for="answer330177X1345X188624" class="control-label radio-label">
+        Onların çok azı Türkiye’de yaşıyor
+    </label>
+</li>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<li id="javatbd330177X1345X188625" class="answer-item radio-item">
+    <input type="radio" value="5" name="330177X1345X18862" id="answer330177X1345X188625" onclick="if (document.getElementById(&#39;answer330177X1345X18862othertext&#39;) != null) document.getElementById(&#39;answer330177X1345X18862othertext&#39;).value=&#39;&#39;;checkconditions(this.value, this.name, this.type)">
+    <label for="answer330177X1345X188625" class="control-label radio-label">
+        Onların hiçbiri Türkiye’de yaşamıyor
+    </label>
+</li>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<li id="javatbd330177X1345X1886297" class="answer-item radio-item">
+    <input type="radio" value="97" name="330177X1345X18862" id="answer330177X1345X1886297" onclick="if (document.getElementById(&#39;answer330177X1345X18862othertext&#39;) != null) document.getElementById(&#39;answer330177X1345X18862othertext&#39;).value=&#39;&#39;;checkconditions(this.value, this.name, this.type)">
+    <label for="answer330177X1345X1886297" class="control-label radio-label">
+        Bilmiyorum
+    </label>
+</li>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<li id="javatbd330177X1345X1886298" class="answer-item radio-item">
+    <input type="radio" value="98" name="330177X1345X18862" id="answer330177X1345X1886298" onclick="if (document.getElementById(&#39;answer330177X1345X18862othertext&#39;) != null) document.getElementById(&#39;answer330177X1345X18862othertext&#39;).value=&#39;&#39;;checkconditions(this.value, this.name, this.type)">
+    <label for="answer330177X1345X1886298" class="control-label radio-label">
+        Yanıt vermeyi reddediyorum
+    </label>
+</li>
+<!-- end of answer_row -->
+</ul>
+
+</div>
+<input id="java330177X1345X18862" disabled="disabled" type="hidden" name="java330177X1345X18862">
+<!-- end of answer -->
+
+
+<!-- Survey question help -->
+<div class="question-help-container text-info col-xs-12 hidden">
+                
+    </div>
+
+</div>
+
+
+        
+
+    <!-- End of question E22 -->
+
+</div>
+<!-- End of question  18862  -->
+
+    
+    <!-- Hidden inputs -->
+            <input type="hidden" name="lastgroup" value="330177X1345" id="lastgroup">
+    
+    </div>
+
+
+</div>
+<!-- END OF GROUP: ARKADAŞLAR VE TEMASTA OLDUĞU KİŞİLER   -->
+
+    
+                
+
+<!-- PRESENT THE NAVIGATOR -->
+<div class="    row navigator space-col" id="navigator-container">
+
+    <!-- Previous button container -->
+    <div class="   col-xs-6 text-left">
+
+                            <!-- Button previous -->
+            <button id="ls-button-previous"  value="moveprev" name="move" accesskey="p" class="ls-move-btn ls-move-previous-btn action--ls-button-previous btn btn-lg btn-default">
+                Önceki
+            </button>
+            </div>
+    <div class="   col-xs-6 text-right">
+
+                
+                                        <!-- Button Next -->
+                <button id="ls-button-submit"   accesskey="n" class="ls-move-btn ls-move-next-btn ls-move-submit-btn action--ls-button-submit btn btn-lg btn-primary">
+                    Sonraki
+                </button>
+                        </div>
+</div>
+<!-- Extra navigator part -->
+    <!-- extra tools, can be shown with javascript too (just remove ls-js-hidden class -->
+    <div class="row ls-js-hidden">
+        <!-- Extra button container -->
+        <div class="col-xs-6 clearall-saveall-wrapper">
+                            <button  value="saveall" name="saveall" nameaccesskey="s" class="ls-saveaction ls-saveall action--ls-button-submit btn btn-default">
+    Daha Sonra Sürdürmek Üzere Kaydet
+</button>
+
+                                        
+<div class=" form-inline">
+    <div class="">
+        <label class="form-group ls-js-hidden">
+            <input value="confirm" name="confirm-clearall" type="checkbox" class=""><span class="control-label">Yanıtınızı silmek istediğinizden emin misiniz?</span>
+        </label>
+        <button  name="clearall" value="clearall" data-confirmedby="confirm-clearall" class="ls-clearaction ls-clearall btn btn-link" title="Bu işlemin onaylanması gerekli.">Çık ve anketi temizle</button>
+    </div>
+</div>
+
+                    </div>
+         <!-- Index container -->
+            </div>
+
+
+
+    
+<input type="hidden" name="ajax" value="on" id="ajax"></form> <!-- main form -->
+
+            
+        <div class=" navbar navbar-default">
+            <hr>
+            <button type="button" class=" navbar-toggle collapsed " data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+    
+        <div id="navbar" class=" collapse navbar-collapse ">
+            <ul class=" nav navbar-nav  navbar-action-link ">
+                <span class="navbar-item-left col-xs-12 col-md-4">
+                    
+    <!-- Resume later button -->
+    <li class=" ls-no-js-hidden ">
+        <a href="https://limesurvey.entra.uni-bamberg.de/index.php/330177#" data-limesurvey-submit="{ &quot;saveall&quot;:&quot;saveall&quot; }" class=" animate">
+            Daha Sonra Sürdürmek Üzere Kaydet
+        </a>
+            </li>
+
+                </span>
+                <span class="navbar-item-middle col-xs-12 col-md-4">
+                    
+
+
+                </span>
+                <span class="navbar-item-right col-xs-12 col-md-4">
+                    
+    <!-- Exit and clear survey -->
+    <li class=" ls-no-js-hidden ">
+        <a href="https://limesurvey.entra.uni-bamberg.de/index.php/330177#" data-limesurvey-submit="{ &quot;clearall&quot;:&quot;clearall&quot; }" data-confirmedby="{ &quot;confirm-clearall&quot;:&quot;confirm&quot; }" data-confirmlabel="Yanıtınızı silmek istediğinizden emin misiniz?" class=" ls-link-action ls-link-clearall  animate">
+            Çık ve anketi temizle
+        </a>
+    </li>
+
+                </span>
+            </ul>
+        <hr>
+        </div>
+
+        <footer>
+            <div class="row">
+                <div class="copyright col-xs-12">
+                    © Universität Konstanz 2019
+                </div>
+            </div>
+        </footer>
+    
+    </div> <!-- main col -->
+</div> <!-- main row -->
+</div>
+                
+                                
+
+
+
+<!-- Bootstrap Modal Alert -->
+<div id="bootstrap-alert-box-modal" class=" modal fade ">
+    <div class=" modal-dialog ">
+        <div class=" modal-content ">
+            <div class=" modal-header " style="min-height:40px;">
+                <button type="button" data-dismiss="modal" aria-hidden="true" class=" close ">×</button>
+                <div class=" modal-title h4 ">&nbsp;</div>
+            </div>
+            <div class=" modal-body ">
+            </div>
+            <div class=" modal-footer ">
+                <a href="https://limesurvey.entra.uni-bamberg.de/index.php/330177#" data-dismiss="modal" class=" btn btn-default ">Kapat</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+                                
+
+                        </div>
+
+        </div></article>
+
+                    <div id="bottomScripts" class="script-container">
+                <script type="text/javascript">
+/*<![CDATA[*/
+
+            try{ 
+                triggerEmClassChange(); 
+            } catch(e) {
+                console.ls.warn('triggerEmClassChange could not be run. Is survey.js correctly loaded?');
+            }
+
+triggerEmRelevance();
+jQuery(document).off('pjax:scriptcomplete.mainBottom').on('ready pjax:scriptcomplete.mainBottom', function() {
+activateActionLink();
+activateConfirmButton();
+
+    $('#limesurvey').append('<input type="hidden" name="ajax" value="on" id="ajax" />');
+    
+updateMandatoryErrorClass();
+});
+/*]]>*/
+</script>
+
+            </div>
+           
+
+                    <script>
+                window.basicThemeScripts.init();
+            </script>
+                
+    
+
+</body></html>
